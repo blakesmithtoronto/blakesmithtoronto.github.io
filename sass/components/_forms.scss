@@ -1,0 +1,17 @@
+input,
+textarea {
+    background: #fdfafa;
+    padding: 15px 30px;
+    border: 1px solid #efe7e7;
+    margin-bottom: 30px;
+    border-radius: 30px;
+
+    &:focus {
+        background: #fff;
+        box-shadow: 0px 20px 40px 0px rgba(79, 35, 35, 0.1);
+    }
+}
+
+textarea {
+    height: 200px;
+}
