@@ -1,3 +1,17 @@
+/**** FIXES ****/
+
+if @media only screen and (min-width: 600px) {
+    #landingFix {
+        margin-top: -100px;
+    }
+}
+
+
+
+
+
+
+
 /*!
   Theme Name: PisSaas
   Theme URI: http://pixelsigns.com/pixsaas
