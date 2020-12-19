@@ -33,52 +33,8 @@
 
     <!-- Google Web Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
-    <script src="./assets/js/main-contact-mailer.js">
+  
 
-    </script>
-    <script>
-        function onSubmit() {
-
-            let name = document.getElementById("contact-name").value
-            let organization = document.getElementById("contact-organization").value
-            let address = document.getElementById("contact-address").value
-            let position = document.getElementById("contact-position").value
-            let numEmployees = document.getElementById("contact-num-employee").value
-            let numOffices = document.getElementById("contact-num-offices").value
-            let phoneNumber = document.getElementById("contact-phone-number").value
-            let email = document.getElementById("contact-email").value
-            let industry = document.getElementById("contact-industry").value
-
-            let text = `name: ${name}
-                organization: ${organization}
-                address: ${address}
-                position: ${position}
-                numEmployees: ${numEmployees}
-                numOffices: ${numOffices}
-                phoneNumber: ${phoneNumber}
-                email: ${email}
-                industry: ${industry}`;
-
-
-            let body = {
-                to: "blake@smithstudios.ca",
-                from: "Sanicloud-website@smithstudios.ca",
-                subject: "New Message from Sanicloud Website!",
-                text: text
-            }
-
-            let url = "https://er868qs1ji.execute-api.ca-central-1.amazonaws.com/dev/";
-
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", url, true);
-            xhr.setRequestHeader("Content-Type", "application/json");
-            var data = JSON.stringify(body);
-            xhr.send(data);
-            alert("Message Sent!");
-
-        }
-
-    </script>
 
 </head>
 
@@ -612,7 +568,6 @@
                                 stroke-miterlimit: 10;
                                 stroke-dasharray: 3.9904, 5.9856;
                             }
-
                         </style>
                         <g>
                             <g>
@@ -843,7 +798,6 @@
                                 stroke-miterlimit: 10;
                                 stroke-dasharray: 3.9904, 5.9856;
                             }
-
                         </style>
                         <g>
                             <g>
@@ -1492,8 +1446,8 @@
 
 
                                 <input type="text" id="contact-industry" name="address" placeholder="Industry" required>
-                                <button onclick="onSubmit()" type="submit" class="pix-btn submit-btn">Submit</button>
-
+                                <button id="main-page-contact-btn" onclick="onSubmit()" class="pix-btn submit-btn">Submit</button>
+                             
                                 <div class="form-result alert">
                                     <div class="content"></div>
                                 </div>
@@ -1623,8 +1577,53 @@
     <script src="assets/js/header.js"></script>
     <script src="assets/js/app.js"></script>
 
+    <script type="text/JavaScript">
+        function onSubmit() {
+
+    let name = document.getElementById("contact-name").value
+    let organization = document.getElementById("contact-organization").value
+    let address = document.getElementById("contact-address").value
+    let position = document.getElementById("contact-position").value
+    let numEmployees = document.getElementById("contact-num-employee").value
+    let numOffices = document.getElementById("contact-num-offices").value
+    let phoneNumber = document.getElementById("contact-phone-number").value
+    let email = document.getElementById("contact-email").value
+    let industry = document.getElementById("contact-industry").value
+
+    let text = `
+                Name: ${name}
+                Organization: ${organization}
+                Address: ${address}
+                Position: ${position}
+                Number of Employees: ${numEmployees}
+                Number of Offices: ${numOffices}
+                Phone Number: ${phoneNumber}
+                Email: ${email}
+                Industry: ${industry}`;
 
 
-</body>
+    let body = {
+        to: "blake@smithstudios.ca",
+        from: "Sanicloud-website@smithstudios.ca",
+        subject: "New Message from Sanicloud Website!",
+        text: text
+    }
 
-</html>
+    if(name != "" && organization != "" && address != "" && position != "" && numEmployees != "" && numOffices != "" && phoneNumber != "" && email != "" && industry != "" ){
+
+   
+        let url = "https://er868qs1ji.execute-api.ca-central-1.amazonaws.com/dev/";
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        var data = JSON.stringify(body);
+        xhr.send(data);
+        alert("Message Sent!");
+    }
+}
+        
+        document.getElementById("main-page-contact-btn").addEventListener('onclick', onSubmit, true)
+    </script>
+
+</body></html>
