@@ -2,804 +2,1559 @@
 <html lang="en">
 
 <head>
-	<!-- Meta Data -->
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<title>Home Four - Software, App, SaaS landing HTML Template</title>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>AUTOMATED SANITIZING SYSTEM FOR COVID-19 - SANICLOUD</title>
 
+    <!--
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav/favicon-16x16.png">
 	<link rel="mask-icon" href="assets/img/fav/safari-pinned-tab.svg" color="#fa7070">
+-->
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0474/0730/0773/files/sanifavicon_v3_32x32.png?v=1603942479" type="image/png" />
 
-	<meta name="msapplication-TileColor" content="#fa7070">
-	<meta name="theme-color" content="#fa7070">
+    <meta name="msapplication-TileColor" content="#fa7070">
+    <meta name="theme-color" content="#fa7070">
 
-	<!-- Dependency Styles -->
-	<link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
-	<link rel="stylesheet" href="dependencies/fontawesome/css/all.min.css" type="text/css">
-	<link rel="stylesheet" href="dependencies/swiper/css/swiper.min.css" type="text/css">
-	<link rel="stylesheet" href="dependencies/wow/css/animate.css" type="text/css">
-	<link rel="stylesheet" href="dependencies/magnific-popup/css/magnific-popup.css" type="text/css">
-	<link rel="stylesheet" href="dependencies/components-elegant-icons/css/elegant-icons.min.css" type="text/css">
-	<link rel="stylesheet" href="dependencies/simple-line-icons/css/simple-line-icons.css" type="text/css">
+    <!-- Dependency Styles -->
+    <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/fontawesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/swiper/css/swiper.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/wow/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/magnific-popup/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/components-elegant-icons/css/elegant-icons.min.css" type="text/css">
+    <link rel="stylesheet" href="dependencies/simple-line-icons/css/simple-line-icons.css" type="text/css">
 
-	<!-- Site Stylesheet -->
-	<link rel="stylesheet" href="assets/css/app.css" type="text/css">
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css">
 
-	<!-- Google Web Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+    <script>
+        function onSubmit() {
 
+            let name = document.getElementById("contact-name").value
+            let organization = document.getElementById("contact-organization").value
+            let address = document.getElementById("contact-address").value
+            let position = document.getElementById("contact-position").value
+            let numEmployees = document.getElementById("contact-num-employee").value
+            let numOffices = document.getElementById("contact-num-offices").value
+            let phoneNumber = document.getElementById("contact-phone-number").value
+            let email = document.getElementById("contact-email").value
+            let industry = document.getElementById("contact-industry").value
+
+            console.log(`name: ${name}
+             organization: ${organization}
+             address: ${address}
+             position: ${position}
+             numEmployees: ${numEmployees}
+             numOffices: ${numOffices}
+             phoneNumber: ${phoneNumber}
+             email: ${email}
+             industry: ${industry}`);
+        }
+    </script>
 
 </head>
 
 <body id="home-version-1" class="home-color-two" data-style="default">
 
-	<a href="#main_content" data-type="section-switch" class="return-to-top">
-		<i class="fa fa-chevron-up"></i>
-	</a>
+    <a href="#main_content" data-type="section-switch" class="return-to-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
 
-	<div class="page-loader">
-		<div class="loader">
-			<!-- Loader -->
-			<div class="blobs">
-				<div class="blob-center"></div>
-				<div class="blob"></div>
-				<div class="blob"></div>
-				<div class="blob"></div>
-				<div class="blob"></div>
-				<div class="blob"></div>
-				<div class="blob"></div>
-			</div>
-			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-				<defs>
-					<filter id="goo">
-						<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-						<feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-						<feBlend in="SourceGraphic" in2="goo" />
-					</filter>
-				</defs>
-			</svg>
+    <div class="page-loader">
+        <div class="loader">
+            <!-- Loader -->
+            <div class="blobs">
+                <div class="blob-center"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                    </filter>
+                </defs>
+            </svg>
 
-		</div>
-	</div><!-- /.page-loader -->
+        </div>
+    </div><!-- /.page-loader -->
 
-	<div id="main_content">
+    <div id="main_content">
 
 
-		<!--=========================-->
-		<!--=        Navbar         =-->
-		<!--=========================-->
-		<header class="site-header header-two toggle-light header_trans-fixed" data-top="992">
-			<div class="container">
-				<div class="header-inner">
-					<div class="site-mobile-logo">
-						<a href="index.html" class="logo">
-							<img src="assets/img/logo_transparent_v3_180x.webp" alt="site logo" class="main-logo">
-							<img src="assets/img/logo_transparent_v3_180x.webp" alt="site logo" class="sticky-logo">
-						</a>
-					</div><!-- /.site-mobile-logo -->
+        <!--=========================-->
+        <!--=        Navbar         =-->
+        <!--=========================-->
+        <header class="site-header header-two toggle-light header_trans-fixed" data-top="992">
+            <div class="container">
+                <div class="header-inner">
+                    <div class="site-mobile-logo">
+                        <a href="index.html" class="logo">
+                            <img src="assets/img/logo_transparent_v3_180x.webp" alt="site logo" class="main-logo">
+                            <img src="assets/img/logo_transparent_v3_180x.webp" alt="site logo" class="sticky-logo">
+                        </a>
+                    </div><!-- /.site-mobile-logo -->
 
-					<div class="toggle-menu">
-						<span class="bar"></span>
-						<span class="bar"></span>
-						<span class="bar"></span>
-					</div>
-					<!-- /.toggle-menu -->
-					<nav class="site-nav nav-two">
-						<div class="close-menu">
-							<span>Close</span>
-							<i class="ei ei-icon_close"></i>
-						</div>
+                    <div class="toggle-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <!-- /.toggle-menu -->
+                    <nav class="site-nav nav-two">
+                        <div class="close-menu">
+                            <span>Close</span>
+                            <i class="ei ei-icon_close"></i>
+                        </div>
 
-						<div class="site-logo">
-							<a href="index.html" class="logo">
-								<img src="assets/img/logo_transparent_v3_180x.webp" alt="site logo" class="main-logo">
-								<img src="assets/img/logo_transparent_v3_180x.webp" alt="site logo" class="sticky-logo">
-							</a>
-						</div>
+                        <div class="site-logo">
+                            <a href="index.html" class="logo">
+                                <img src="assets/img/logo_transparent_v3_180x.webp" alt="site logo" class="main-logo">
+                                <img src="assets/img/logo_transparent_v3_180x.webp" alt="site logo" class="sticky-logo">
+                            </a>
+                        </div>
 
-						<div class="menu-wrapper" data-top="992">
-							<ul class="site-main-menu">
-								<li class="menu-item-has-children">
-									<a href="index.html">Home</a>
-									<ul class="sub-menu">
-										<li><a href="index.html">Home One</a></li>
-										<li><a href="index-two.html">Home Two</a></li>
-										<li><a href="index-three.html">Home Three</a></li>
-										<li><a href="index-four.html">Home Four</a></li>
-										<li><a href="index-five.html">Home Five</a></li>
-										<li><a href="index-six.html">Home Six</a></li>
-									</ul>
-								</li>
-								<li><a href="about.html">About</a></li>
-								<li class="menu-item-has-children">
-									<a href="blog.html">Blog</a>
-									<ul class="sub-menu">
-										<li><a href="blog.html">Blog Standard</a></li>
-										<li><a href="blog-grid.html">Blog Grid</a></li>
-										<li><a href="blog-single.html">Blog Single</a></li>
-									</ul>
-								</li>
-								<li class="menu-item-has-children">
-									<a href="#">Pages</a>
+                        <div class="menu-wrapper" data-top="992">
+                            <ul class="site-main-menu">
+                                <li class="menu-item-has-children">
+                                    <a href="index.html">Home</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Home One</a></li>
+                                        <li><a href="index-two.html">Home Two</a></li>
+                                        <li><a href="index-three.html">Home Three</a></li>
+                                        <li><a href="index-four.html">Home Four</a></li>
+                                        <li><a href="index-five.html">Home Five</a></li>
+                                        <li><a href="index-six.html">Home Six</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">Order Now</a></li>
 
-									<ul class="sub-menu">
-										<li><a href="about.html">About</a></li>
-										<li><a href="service.html">Service</a></li>
-										<li><a href="team.html">Our Team</a></li>
-										<li><a href="pricing.html">Pricing</a></li>
-										<li class="menu-item-has-children">
-											<a href="portfolio.html">Portfolio</a>
-											<ul class="sub-menu">
-												<li><a href="portfolio-one.html">Style One</a></li>
-												<li><a href="portfolio-two.html">Style Two</a></li>
-												<li><a href="portfolio-three.html">Style Three</a></li>
-												<li><a href="portfolio-single.html">Portfolio Single</a></li>
-											</ul>
-										</li>
-										<li><a href="faq.html">Faq's</a></li>
-										<li><a href="error.html">Error 404</a></li>
-										<li><a href="signin.html">Sing In</a></li>
-										<li><a href="signup.html">Sing Up</a></li>
-									</ul>
-								</li>
+                                <li><a href="about.html">About</a></li>
 
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Careers</a>
 
-							<div class="nav-right">
-								<a href="signup.html" class="nav-btn style-two">Buy Now</a>
-							</div>
-						</div>
-						<!-- /.menu-wrapper -->
-					</nav><!-- /.site-nav -->
+                                    <ul class="sub-menu">
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="service.html">Service</a></li>
+                                        <li><a href="team.html">Our Team</a></li>
+                                        <li><a href="pricing.html">Pricing</a></li>
+                                        <li class="menu-item-has-children">
+                                            <a href="portfolio.html">Portfolio</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="portfolio-one.html">Style One</a></li>
+                                                <li><a href="portfolio-two.html">Style Two</a></li>
+                                                <li><a href="portfolio-three.html">Style Three</a></li>
+                                                <li><a href="portfolio-single.html">Portfolio Single</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="faq.html">Faq's</a></li>
+                                        <li><a href="error.html">Error 404</a></li>
+                                        <li><a href="signin.html">Sing In</a></li>
+                                        <li><a href="signup.html">Sing Up</a></li>
+                                    </ul>
+                                </li>
 
-				</div><!-- /.header-inner -->
-			</div><!-- /.container -->
-		</header><!-- /.site-header -->
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="./distributorships.html">Distributorships</a></li>
+                            </ul>
 
-		<!--==========================-->
-		<!--=         Banner         =-->
-		<!--==========================-->
-		<section class="banner banner-four">
-			<div class="container">
-				<div class="banner-content-wrap-four">
-					<div class="row">
-                        
+                            <div class="nav-right">
+                                <a href="./SaasLand-Full/job-listing.html" class="nav-btn style-two">Buy Now</a>
+                            </div>
+                        </div>
+                        <!-- /.menu-wrapper -->
+                    </nav><!-- /.site-nav -->
+
+                </div><!-- /.header-inner -->
+            </div><!-- /.container -->
+        </header><!-- /.site-header -->
+
+        <!--==========================-->
+        <!--=         Banner         =-->
+        <!--==========================-->
+        <section class="banner banner-four">
+            <div class="container">
+                <div class="banner-content-wrap-four">
+                    <div class="row">
+
                         <div class="col-lg-7 col-md-7" id="landing-fix">
-							<div class="banner-content">
-								<h1 class="banner-title wow pixFadeUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: pixFadeUp;">
-									Powerful <span>New <br>
-										Technology</span> <br>
-								
-								</h1>
+                            <div class="banner-content">
+                                <h1 class="banner-title wow pixFadeUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: pixFadeUp;">
+                                    Powerful <span>New <br>
+                                        Technology</span> <br>
 
-								<p class="description wow pixFadeUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: pixFadeUp;">
-									to eradicate airborne viruses in your work environment
-                    
-								</p>
+                                </h1>
 
-								<a href="https://calendly.com/sanicloudcanada" class="pxs-btn banner-btn wow pixFadeUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: pixFadeUp;">Sheduale Call</a>
-							</div><!-- /.banner-content -->
-						</div>
-						<!-- /.col-lg-8 -->
+                                <p class="description wow pixFadeUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: pixFadeUp;">
+                                    to eradicate airborne viruses in your work environment
 
-						<div class="col-lg-5 col-md-5">
-							<div class="promo-mockup wow pixFadeUp text-center">
-								<img src="./assets/img/Product_347_v5_Transparent.webp" class="wow pixZoomIn" alt="mpckup">
-							</div><!-- /.promo-mockup -->
-						</div>
-						<!-- /.col-lg-4 col-md-5 -->
-					</div>
-					<!-- /.row -->
+                                </p>
 
+                                <a href="https://calendly.com/sanicloudcanada" class="pxs-btn banner-btn wow pixFadeUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: pixFadeUp;">Sheduale Call</a>
+                            </div><!-- /.banner-content -->
+                        </div>
+                        <!-- /.col-lg-8 -->
 
-
-				</div><!-- /.banner-content-wrap -->
-			</div><!-- /.container -->
-
-			<div class="bg-shape-inner">
-				<div class="bottom-shape"><img src="media/banner/banner-three-shape.png" alt="circle"></div>
-			</div>
-			<!-- /.bg-shape-inner -->
-		</section><!-- /.banner banner-four -->
-
-		<!--==========================-->
-		<!--=         Feature        =-->
-		<!--==========================-->
-		<section class="featured-five">
-			<div class="container">
-				<div class="section-title style-three text-center">
-					<h2 class="title wow pixFadeUp" data-wow-delay="0.2s">
-						USE SANICLOUD'S STATE-OF-THE-ART TECHNOLOGY<br> TO KEEP YOUR PRACTIONERS, STAFF &amp; PATIENTS SAFE
-						
-					</h2>
-				</div><!-- /.section-title -->
-
-				<div class="row justify-content-center">
-					<div class="col-lg-4 col-md-6">
-						<div class="saaspik-icon-box-wrapper style-five wow pixFadeRight" data-wow-delay="0.4s">
-							<div class="saaspik-icon-box-icon">
-								<i class="icon-rocket"></i>
-							</div>
-							<div class="pixsass-icon-box-content">
-								<h3 class="pixsass-icon-box-title"><a href="#">Advanced and Proven</a></h3>
-								<p>
-									We bring advanced and proven clean room technology to professional practices and community offices..
-								</p>
-
-								<a href="#" class="more-btn">Find out More <i class="ei ei-arrow_right"></i></a>
-							</div>
-						</div><!-- /.pixsass-box style-five -->
-					</div><!-- /.col-lg-4 col-md-6 -->
-
-					<div class="col-lg-4 col-md-6">
-						<div class="saaspik-icon-box-wrapper style-five wow pixFadeRight" data-wow-delay="0.5s">
-							<div class="saaspik-icon-box-icon">
-								<i class="icon-bell"></i>
-							</div>
-							<div class="pixsass-icon-box-content">
-								<h3 class="pixsass-icon-box-title"><a href="#">99% effective</a></h3>
-
-								<p>
-									Our system effectively neutralizes over 99% of COVID-19 and influenza viruses in offices and exam rooms with each 3 minute application.
-								</p>
-
-								<a href="#" class="more-btn">Find out More <i class="ei ei-arrow_right"></i></a>
-							</div>
-						</div><!-- /.pixsass-box style-five -->
-					</div><!-- /.col-lg-4 col-md-6 -->
-
-					<div class="col-lg-4 col-md-6">
-						<div class="saaspik-icon-box-wrapper style-five wow pixFadeRight" data-wow-delay="0.6s">
-							<div class="saaspik-icon-box-icon">
-								<i class="icon-screen-tablet"></i>
-							</div>
-							<div class="pixsass-icon-box-content">
-								<h3 class="pixsass-icon-box-title">
-									<a href="#">
-										The system takes 3 minutes
-									</a>
-								</h3>
-								<p>
-									 per room and the dry charged aerosols do not wet surfaces while actively killing viruses on surfaces and in the air
-								</p>
-
-								<a href="#" class="more-btn">Find out More <i class="ei ei-arrow_right"></i></a>
-							</div>
-						</div><!-- /.pixsass-box style-five -->
-					</div><!-- /.col-lg-4 col-md-6 -->
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-		</section><!-- /.featured -->
-
-		<!--==========================-->
-		<!--=         Feature        =-->
-		<!--==========================-->
-		<section class="featured-six">
-			<div class="container">
-				<div class="section-title style-three text-center">
-					<h2 class="title wow pixFadeUp" data-wow-delay="0.2s">
-						The Sanicloud Model 1000 is:
-					</h2>
-				</div><!-- /.section-title -->
-
-				<div class="row align-items-center">
-					<div class="col-lg-5 col-md-5">
-						<div class="feature-image-wrapper wow pixFadeLeft">
-							<img src="./assets/img/SaniOpenScreen_v3.webp" alt="">
-						</div>
-						<!-- /.feature-image-wrapper -->
-					</div>
-					<!-- /.col-lg-5 -->
-
-					<div class="col-lg-7 col-md-7">
-						<div class="saaspik-icon-box-wrapper style-six wow pixFadeRight" data-wow-delay="0.4s">
-							<div class="saaspik-icon-box-icon">
-								<img src="./assets/img/icons/icons8-heart-health-40.png" alt="icon">
-							</div>
-							<div class="pixsass-icon-box-content">
-								<h3 class="pixsass-icon-box-title">
-									<a href="#">Effective &amp; Safe to operate</a>
-								</h3>
-							</div>
-						</div><!-- /.pixsass-box style-six -->
-
-						<div class="saaspik-icon-box-wrapper style-six wow pixFadeRight" data-wow-delay="0.5s">
-							<div class="saaspik-icon-box-icon">
-								<img src="./assets/img/icons/icons8-feather-40.png" alt="icon">
-							</div>
-							<div class="pixsass-icon-box-content">
-								<h3 class="pixsass-icon-box-title">
-									<a href="#">Mobile, light, compact and durable</a>
-								</h3>
-							</div>
-						</div><!-- /.pixsass-box style-six -->
-
-						<div class="saaspik-icon-box-wrapper style-six wow pixFadeRight" data-wow-delay="0.6s">
-							<div class="saaspik-icon-box-icon">
-								<img src="./assets/img/icons/icons8-virus-40.png" alt="icon">
-							</div>
-							<div class="pixsass-icon-box-content">
-								<h3 class="pixsass-icon-box-title">
-									<a href="#">
-										Easy to use &amp; Quick to disinfect
-									</a>
-								</h3>
-							</div>
-						</div><!-- /.pixsass-box style-six -->
-
-						<div class="saaspik-icon-box-wrapper style-six wow pixFadeRight" data-wow-delay="0.7s">
-							<div class="saaspik-icon-box-icon">
-								<img src="./assets/img/icons/icons8-cheap-2-40.png" alt="icon">
-							</div>
-							<div class="pixsass-icon-box-content">
-								<h3 class="pixsass-icon-box-title">
-									<a href="#">
-									Inexpensive, allowing frequent applications
-									</a>
-								</h3>
-							</div>
-						</div><!-- /.pixsass-box style-six -->
-             
-					</div>
-					<!-- /.col-lg-7 -->
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-
-			<div class="down-bg">
-				<img src="media/background/down-bg.png" alt="down-bg">
-			</div>
-		</section><!-- /.featured -->
-
-		<!--==========================-->
-		<!--=         App Interface        =-->
-		<!--==========================-->
-		<section class="interface">
-			<div class="container">
-				<div class="interface-toparea">
-					<div class="row">
-						<div class="col-lg-7 pix-order-one">
-							<div class="interface-content pt-7">
-								<div class="interface-title pixFadeUp">
-									<h2>
-										MOBILE AND EASY TO USE
-									</h2>
-                                         
-									<p class="wow pixFadeUp" data-wow-delay="0.3s">
-													   Our proprietary nozzle technology ensures consistent application  <br>
-									of vaporized peroxide to leave viruses dead in their tracks<br>
-									</p>
-
-								</div>
-								<!-- /.section-title style-two -->
-
-								<ul class="list-items wow pixFadeUp" data-wow-delay="0.4s">
-									<li>Begins neutralizing viruses immediately, achieving a concentration of 10 ppm within 30 seconds and maintaining it for 2.5 minutes</li>
-									<li>Provides quicker room readiness than alternative devices</li>
-									<li>Uses dry aerosol technology that does not harm electronics or personal effects left in the office</li>
-									<li>
-Reaches every square inch of surface and every cubic inch of air in your room every time</li>
-                                    
-								</ul>
-
-								<a href="#" class="pix-btn btn-outline-two wow pixFadeUp" data-wow-delay="0.5s">Buy Now</a>
-
-							</div>
-							<!-- /.interface-content -->
-						</div>
-						<!-- /.col-lg-6 -->
+                        <div class="col-lg-5 col-md-5">
+                            <div class="promo-mockup wow pixFadeUp text-center">
+                                <img src="./assets/img/Product_347_v5_Transparent.webp" class="wow pixZoomIn" alt="mpckup">
+                            </div><!-- /.promo-mockup -->
+                        </div>
+                        <!-- /.col-lg-4 col-md-5 -->
+                    </div>
+                    <!-- /.row -->
 
 
-						<div class="col-lg-5">
-							<div class="interface-image-wrapper style-one">
-								<div class="image-one wow pixFadeUp">
-									<img src="assets/img/Product_345_v4_Transparent.webp" data-parallax='{"y" : 50}' alt="interface">
-								</div>
 
-								<div class="image-two wow pixFadeDown">
-									<img src="assets/img/Product_345_v4_Transparent.webp" data-parallax='{"y" : -50}' alt="interface">
-								</div>
+                </div><!-- /.banner-content-wrap -->
+            </div><!-- /.container -->
+
+            <div class="bg-shape-inner">
+                <div class="bottom-shape"><img src="media/banner/banner-three-shape.png" alt="circle"></div>
+            </div>
+            <!-- /.bg-shape-inner -->
+        </section><!-- /.banner banner-four -->
+
+        <!--==========================-->
+        <!--=         Feature        =-->
+        <!--==========================-->
+        <section class="featured-five">
+            <div class="container">
+                <div class="section-title style-three text-center">
+                    <h2 class="title wow pixFadeUp" data-wow-delay="0.2s">
+                        USE SANICLOUD'S STATE-OF-THE-ART TECHNOLOGY<br> TO KEEP YOUR PRACTIONERS, STAFF &amp; PATIENTS SAFE
+
+                    </h2>
+                </div><!-- /.section-title -->
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="saaspik-icon-box-wrapper style-five wow pixFadeRight" data-wow-delay="0.5s">
+                            <div class="saaspik-icon-box-icon">
+                                <i class="icon-shield"></i>
+                            </div>
+                            <div class="pixsass-icon-box-content">
+                                <h3 class="pixsass-icon-box-title"><a href="#">99% effective</a></h3>
+
+                                <p>
+                                    Our system effectively neutralizes over 99% of COVID-19 and influenza viruses in offices and exam rooms with each 3 minute application.<sup style="color:#7052fb">[ 1 ]</sup>
+                                </p>
+
+                                <!--								<a href="#" class="more-btn">Find out More <i class="ei ei-arrow_right"></i></a>-->
+                            </div>
+                        </div><!-- /.pixsass-box style-five -->
+                    </div><!-- /.col-lg-4 col-md-6 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="saaspik-icon-box-wrapper style-five wow pixFadeRight" data-wow-delay="0.4s">
+                            <div class="saaspik-icon-box-icon">
+                                <i class="icon-chemistry"></i>
+                            </div>
+                            <div class="pixsass-icon-box-content">
+                                <h3 class="pixsass-icon-box-title"><a href="#">Advanced and Proven</a></h3>
+                                <p>
+                                    We bring advanced and proven clean room technology to professional practices and community offices.
+                                </p>
+
+                                <!--								<a href="#" class="more-btn">Find out More <i class="ei ei-arrow_right"></i></a>-->
+                            </div>
+                        </div><!-- /.pixsass-box style-five -->
+                    </div><!-- /.col-lg-4 col-md-6 -->
 
 
-								<svg xmlns="http://www.w3.org/2000/svg" class="svgbg-one" xmlns:xlink="http://www.w3.org/1999/xlink" width="700px" height="700px">
-									<path fill-rule="evenodd" opacity="0.102" fill="rgb(251, 201, 82)" d="M350.000,-0.000 C543.300,-0.000 700.000,156.700 700.000,350.000 C700.000,543.299 543.300,700.000 350.000,700.000 C156.700,700.000 -0.000,543.299 -0.000,350.000 C-0.000,156.700 156.700,-0.000 350.000,-0.000 Z" />
-								</svg>
-							</div>
-							<!-- /.interface-image-wrapper -->
-						</div>
-						<!-- /.col-lg-6 -->
-					</div>
-					<!-- /.interface-toparea -->
 
-				</div>
-				<!-- /.row -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="saaspik-icon-box-wrapper style-five wow pixFadeRight" data-wow-delay="0.6s">
+                            <div class="saaspik-icon-box-icon">
+                                <i class="icon-speedometer"></i>
+                            </div>
+                            <div class="pixsass-icon-box-content">
+                                <h3 class="pixsass-icon-box-title">
+                                    <a href="#">
+                                        The system takes 3 minutes
+                                    </a>
+                                </h3>
+                                <p>
+                                    per room and the dry charged aerosols do not wet surfaces while actively killing viruses on surfaces and in the air.<sup style="color:#7052fb">[ 2 ]</sup>
+                                </p>
 
-				<div class="row">
-					<div class="col-lg-7">
-						<div class="interface-image-wrapper style-two">
-							<div class="image-one wow pixFadeRight">
-								<img src="./assets/img/Product_347_v5_Transparent.webp" data-parallax='{"x" : 30}' alt="interface">
-							</div>
+                                <!--								<a href="#" class="more-btn">Find out More <i class="ei ei-arrow_right"></i></a>-->
+                            </div>
+                        </div><!-- /.pixsass-box style-five -->
+                    </div><!-- /.col-lg-4 col-md-6 -->
+                </div><!-- /.row -->
+                <p><span>[ 1 ]</span> American journal of infection control. volume 37, issue 10, p813-819, December 01, 2009. See <a href="#">journal</a> for more details.</p>
+                <p>[ 2 ] Real world engineering tests performed in a standard office of 120 square feet.</p>
+            </div><!-- /.container -->
+        </section><!-- /.featured -->
 
-							<div class="image-two wow pixFadeLeft">
-								<img src="./assets/img/Product_347_v5_Transparent.webp" data-parallax='{"x" : -30}' alt="interface">
-							</div>
+        <!--==========================-->
+        <!--=         Feature        =-->
+        <!--==========================-->
+        <section class="featured-six">
+            <div class="container">
+                <div class="section-title style-three text-center">
+                    <h2 class="title wow pixFadeUp" data-wow-delay="0.2s">
+                        The Sanicloud Model 1000 is:
+                    </h2>
+                </div><!-- /.section-title -->
+
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-5">
+                        <div class="feature-image-wrapper wow pixFadeLeft">
+                            <img src="./assets/img/SaniOpenScreen_v3.webp" alt="">
+                        </div>
+                        <!-- /.feature-image-wrapper -->
+                    </div>
+                    <!-- /.col-lg-5 -->
+
+                    <div class="col-lg-7 col-md-7">
+                        <div class="saaspik-icon-box-wrapper style-six wow pixFadeRight" data-wow-delay="0.4s">
+                            <div class="saaspik-icon-box-icon">
+                                <img src="./assets/img/icons/icons8-heart-health-40.png" alt="icon">
+                            </div>
+                            <div class="pixsass-icon-box-content">
+                                <h3 class="pixsass-icon-box-title">
+                                    <a href="#">Effective &amp; Safe to operate</a>
+                                </h3>
+                            </div>
+                        </div><!-- /.pixsass-box style-six -->
+
+                        <div class="saaspik-icon-box-wrapper style-six wow pixFadeRight" data-wow-delay="0.5s">
+                            <div class="saaspik-icon-box-icon">
+                                <img src="./assets/img/icons/icons8-feather-40.png" alt="icon">
+                            </div>
+                            <div class="pixsass-icon-box-content">
+                                <h3 class="pixsass-icon-box-title">
+                                    <a href="#">Mobile, light, compact and durable</a>
+                                </h3>
+                            </div>
+                        </div><!-- /.pixsass-box style-six -->
+
+                        <div class="saaspik-icon-box-wrapper style-six wow pixFadeRight" data-wow-delay="0.6s">
+                            <div class="saaspik-icon-box-icon">
+                                <img src="./assets/img/icons/icons8-virus-40.png" alt="icon">
+                            </div>
+                            <div class="pixsass-icon-box-content">
+                                <h3 class="pixsass-icon-box-title">
+                                    <a href="#">
+                                        Easy to use &amp; Quick to disinfect
+                                    </a>
+                                </h3>
+                            </div>
+                        </div><!-- /.pixsass-box style-six -->
+
+                        <div class="saaspik-icon-box-wrapper style-six wow pixFadeRight" data-wow-delay="0.7s">
+                            <div class="saaspik-icon-box-icon">
+                                <img src="./assets/img/icons/icons8-cheap-2-40.png" alt="icon">
+                            </div>
+                            <div class="pixsass-icon-box-content">
+                                <h3 class="pixsass-icon-box-title">
+                                    <a href="#">
+                                        Inexpensive, allowing frequent applications
+                                    </a>
+                                </h3>
+                            </div>
+                        </div><!-- /.pixsass-box style-six -->
+
+                    </div>
+                    <!-- /.col-lg-7 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+
+            <div class="down-bg">
+                <img src="media/background/down-bg.png" alt="down-bg">
+            </div>
+        </section><!-- /.featured -->
+
+        <!--==========================-->
+        <!--=         App Interface        =-->
+        <!--==========================-->
+        <section class="interface">
+            <div class="container">
+                <div class="interface-toparea">
+                    <div class="row">
+                        <div class="col-lg-7 pix-order-one">
+                            <div class="interface-content pt-7">
+                                <div class="interface-title pixFadeUp">
+                                    <h2>
+                                        MOBILE AND EASY TO USE
+                                    </h2>
+
+                                    <p class="wow pixFadeUp" data-wow-delay="0.3s">
+                                        Our proprietary nozzle technology ensures consistent application <br>
+                                        of vaporized peroxide to leave viruses dead in their tracks<br>
+                                    </p>
+
+                                </div>
+                                <!-- /.section-title style-two -->
+
+                                <ul class="list-items wow pixFadeUp" data-wow-delay="0.4s">
+                                    <li>Begins neutralizing viruses immediately, achieving a concentration of 10 ppm within 30 seconds and maintaining it for 2.5 minutes</li>
+                                    <li>Provides quicker room readiness than alternative devices</li>
+                                    <li>Uses dry aerosol technology that does not harm electronics or personal effects left in the office</li>
+                                    <li>
+                                        Reaches every square inch of surface and every cubic inch of air in your room every time</li>
+
+                                </ul>
+
+                                <a href="#" class="pix-btn btn-outline-two wow pixFadeUp" data-wow-delay="0.5s">Buy Now</a>
+
+                            </div>
+                            <!-- /.interface-content -->
+                        </div>
+                        <!-- /.col-lg-6 -->
 
 
-							<svg xmlns="http://www.w3.org/2000/svg" class="svgbg-two" xmlns:xlink="http://www.w3.org/1999/xlink" width="700px" height="700px">
-								<path fill-rule="evenodd" opacity="0.102" fill="rgb(82, 251, 237)" d="M350.000,-0.000 C543.300,-0.000 700.000,156.700 700.000,350.000 C700.000,543.299 543.300,700.000 350.000,700.000 C156.700,700.000 -0.000,543.299 -0.000,350.000 C-0.000,156.700 156.700,-0.000 350.000,-0.000 Z" />
-							</svg>
-						</div>
-						<!-- /.interface-image-wrapper -->
-					</div>
-					<!-- /.col-lg-6 -->
+                        <div class="col-lg-5">
+                            <div class="interface-image-wrapper style-one">
+                                <div class="image-one wow pixFadeUp">
+                                    <img src="assets/img/Product_345_v4_Transparent.webp" data-parallax='{"y" : 50}' alt="interface">
+                                </div>
 
-					<div class="col-lg-5 pix-order-one">
-						<div class="interface-content">
+                                <div class="image-two wow pixFadeDown">
+                                    <img src="assets/img/Product_345_v4_Transparent.webp" data-parallax='{"y" : -50}' alt="interface">
+                                </div>
 
-							<div class="interface-title pixFadeUp">
-								<h2>SAFE AND FAST-ACTING
-									
-								</h2>
-                                     
-                                 
-								<p class="wow pixFadeUp md-brn" data-wow-delay="0.3s">
-						
-																		 Sanicloud introduces a NEW and POWERFUL tool to dramatically<br>
-										reduce Airborne Viral risk for everyone working in or visiting<br>
-										your office or clinic space.
-								</p>
 
-							</div>
-							<!-- /.section-title style-two -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="svgbg-one" xmlns:xlink="http://www.w3.org/1999/xlink" width="700px" height="700px">
+                                    <path fill-rule="evenodd" opacity="0.102" fill="rgb(251, 201, 82)" d="M350.000,-0.000 C543.300,-0.000 700.000,156.700 700.000,350.000 C700.000,543.299 543.300,700.000 350.000,700.000 C156.700,700.000 -0.000,543.299 -0.000,350.000 C-0.000,156.700 156.700,-0.000 350.000,-0.000 Z" />
+                                </svg>
+                            </div>
+                            <!-- /.interface-image-wrapper -->
+                        </div>
+                        <!-- /.col-lg-6 -->
+                    </div>
+                    <!-- /.interface-toparea -->
 
-							<ul class="list-items list-with-icon wow pixFadeUp" data-wow-delay="0.4s">
-								<li><i class="ei ei-icon_cloud-upload_alt"></i> Operate the machine without training</li>
-								<li><i class="ei ei-icon_key_alt"></i> Automatically stops disinfection process</li>
-								<li><i class="ei ei-icon_mug"></i> Light, portable, and maneuverable</li>
-                                		<li><i class="ei ei-icon_mug"></i>Requires little to no maintenance</li>
-							</ul>
+                </div>
+                <!-- /.row -->
 
-							<a href="#" class="pix-btn btn-outline-two wow pixFadeUp" data-wow-delay="0.5s">Discover More</a>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="interface-image-wrapper style-two">
+                            <div class="image-one wow pixFadeRight">
+                                <img src="./assets/img/Product_347_v5_Transparent.webp" data-parallax='{"x" : 30}' alt="interface">
+                            </div>
 
-						</div>
-						<!-- /.interface-content -->
-					</div>
-					<!-- /.col-lg-6 -->
-				</div>
-				<!-- /.row -->
+                            <div class="image-two wow pixFadeLeft">
+                                <img src="./assets/img/Product_347_v5_Transparent.webp" data-parallax='{"x" : -30}' alt="interface">
+                            </div>
 
-				<div class="border-wrap">
-					<span class="ball" data-parallax='{"x" : -100}'></span>
-					<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-					<svg version="1.1" id="animate-border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 908.5 976.2" style="enable-background:new 0 0 908.5 976.2;" xml:space="preserve">
-						<style type="text/css">
-							.st0 {
-								fill: #FFFFFF;
-							}
 
-							.st1 {
-								opacity: 5.000000e-02;
-							}
+                            <svg xmlns="http://www.w3.org/2000/svg" class="svgbg-two" xmlns:xlink="http://www.w3.org/1999/xlink" width="700px" height="700px">
+                                <path fill-rule="evenodd" opacity="0.102" fill="rgb(82, 251, 237)" d="M350.000,-0.000 C543.300,-0.000 700.000,156.700 700.000,350.000 C700.000,543.299 543.300,700.000 350.000,700.000 C156.700,700.000 -0.000,543.299 -0.000,350.000 C-0.000,156.700 156.700,-0.000 350.000,-0.000 Z" />
+                            </svg>
+                        </div>
+                        <!-- /.interface-image-wrapper -->
+                    </div>
+                    <!-- /.col-lg-6 -->
 
-							.st2 {
-								fill: #1A4A88;
-							}
+                    <div class="col-lg-5 pix-order-one">
+                        <div class="interface-content">
 
-							.st3 {
-								opacity: 0.8;
-								fill: #EA7225;
-							}
+                            <div class="interface-title pixFadeUp">
+                                <h2>SAFE AND FAST-ACTING
 
-							.st4 {
-								fill: #D86928;
-							}
+                                </h2>
 
-							.st5 {
-								fill: #EA7225;
-							}
 
-							.st6 {
-								fill: #F89938;
-							}
+                                <p class="wow pixFadeUp md-brn" data-wow-delay="0.3s">
 
-							.st7 {
-								fill: #FDFEFE;
-							}
+                                    Sanicloud introduces a NEW and POWERFUL tool to dramatically<br>
+                                    reduce Airborne Viral risk for everyone working in or visiting<br>
+                                    your office or clinic space.
+                                </p>
 
-							.st8 {
-								opacity: 0.5;
-								fill: #EA7225;
-							}
+                            </div>
+                            <!-- /.section-title style-two -->
 
-							.st9 {
-								opacity: 0.75;
-								fill: #EA7225;
-							}
+                            <ul class="list-items list-with-icon wow pixFadeUp" data-wow-delay="0.4s">
+                                <li><i class="ei ei-icon_cloud-upload_alt"></i> Operate the machine without training</li>
+                                <li><i class="ei ei-icon_key_alt"></i> Automatically stops disinfection process</li>
+                                <li><i class="ei ei-icon_mug"></i> Light, portable, and maneuverable</li>
+                                <li><i class="ei ei-icon_mug"></i>Requires little to no maintenance</li>
+                            </ul>
 
-							.st10 {
-								fill: none;
-								stroke: #1A4A88;
-								stroke-width: 1.5;
-								stroke-miterlimit: 10;
-							}
+                            <a href="#" class="pix-btn btn-outline-two wow pixFadeUp" data-wow-delay="0.5s">Discover More</a>
 
-							.st11 {
-								opacity: 0.1;
-							}
+                        </div>
+                        <!-- /.interface-content -->
+                    </div>
+                    <!-- /.col-lg-6 -->
+                </div>
+                <!-- /.row -->
 
-							.st12 {
-								opacity: 0.85;
-								fill: #EA7225;
-							}
+                <div class="border-wrap">
+                    <span class="ball" data-parallax='{"x" : -100}'></span>
+                    <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="animate-border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 908.5 976.2" style="enable-background:new 0 0 908.5 976.2;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill: #FFFFFF;
+                            }
 
-							.st13 {
-								opacity: 0.81;
-								fill: #EA7225;
-							}
+                            .st1 {
+                                opacity: 5.000000e-02;
+                            }
 
-							.st14 {
-								opacity: 0.4;
-								fill: #EA7225;
-							}
+                            .st2 {
+                                fill: #1A4A88;
+                            }
 
-							.st15 {
-								opacity: 0.7;
-								fill: #EA7225;
-							}
+                            .st3 {
+                                opacity: 0.8;
+                                fill: #EA7225;
+                            }
 
-							.st16 {
-								fill: none;
-								stroke: #F0577E;
-								stroke-width: 2;
-								stroke-miterlimit: 10;
-							}
+                            .st4 {
+                                fill: #D86928;
+                            }
 
-							.st17 {
-								fill: none;
-								stroke: #F0577E;
-								stroke-width: 2;
-								stroke-miterlimit: 10;
-								stroke-dasharray: 3.9904, 5.9856;
-							}
-						</style>
-						<g>
-							<g>
-								<g>
-									<path class="st16" d="M8.4,908.7c0,0,0.6,0.4,1.7,1.1" />
-									<path class="st17 path" d="M15.2,912.9c36.7,22,207.6,117.4,147.2-44.2c-67.5-180.6-137.7-410.5,320-358
+                            .st5 {
+                                fill: #EA7225;
+                            }
+
+                            .st6 {
+                                fill: #F89938;
+                            }
+
+                            .st7 {
+                                fill: #FDFEFE;
+                            }
+
+                            .st8 {
+                                opacity: 0.5;
+                                fill: #EA7225;
+                            }
+
+                            .st9 {
+                                opacity: 0.75;
+                                fill: #EA7225;
+                            }
+
+                            .st10 {
+                                fill: none;
+                                stroke: #1A4A88;
+                                stroke-width: 1.5;
+                                stroke-miterlimit: 10;
+                            }
+
+                            .st11 {
+                                opacity: 0.1;
+                            }
+
+                            .st12 {
+                                opacity: 0.85;
+                                fill: #EA7225;
+                            }
+
+                            .st13 {
+                                opacity: 0.81;
+                                fill: #EA7225;
+                            }
+
+                            .st14 {
+                                opacity: 0.4;
+                                fill: #EA7225;
+                            }
+
+                            .st15 {
+                                opacity: 0.7;
+                                fill: #EA7225;
+                            }
+
+                            .st16 {
+                                fill: none;
+                                stroke: #F0577E;
+                                stroke-width: 2;
+                                stroke-miterlimit: 10;
+                            }
+
+                            .st17 {
+                                fill: none;
+                                stroke: #F0577E;
+                                stroke-width: 2;
+                                stroke-miterlimit: 10;
+                                stroke-dasharray: 3.9904, 5.9856;
+                            }
+                        </style>
+                        <g>
+                            <g>
+                                <g>
+                                    <path class="st16" d="M8.4,908.7c0,0,0.6,0.4,1.7,1.1" />
+                                    <path class="st17 path" d="M15.2,912.9c36.7,22,207.6,117.4,147.2-44.2c-67.5-180.6-137.7-410.5,320-358
 							c457.7,52.5,448.6-207.4,383-331C808.1,71.8,725.1,26.6,704.9,16.8" />
-									<path class="st16" d="M702.2,15.5c-1.2-0.5-1.8-0.8-1.8-0.8" />
-								</g>
-							</g>
-						</g>
-					</svg>
-				</div>
+                                    <path class="st16" d="M702.2,15.5c-1.2-0.5-1.8-0.8-1.8-0.8" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
 
 
-			</div>
-			<!-- /.container -->
-		</section>
-		<!-- /.interface -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.interface -->
+        <!--==========================-->
+        <!--=         App Interface        =-->
+        <!--==========================-->
+        <section class="interface">
+            <div class="container">
+                <div class="interface-toparea">
+                    <div class="row">
+                        <div class="col-lg-7 pix-order-one">
+                            <div class="interface-content pt-7">
+                                <div class="interface-title pixFadeUp">
+                                    <h2>
+                                        The Science Behind the Solution
+                                    </h2>
 
-		<!--=================================-->
-		<!--=         Signup Section        =-->
-		<!--=================================-->
-		<section class="signup-section">
-			<div class="bg-shape">
-				<img src="media/background/left-shape.png" data-parallax='{"x": -130}' alt="shape" class="shape-left">
-				<img src="media/background/right_shape.png" data-parallax='{"x": 130}' alt="shape" class="shape-right">
-			</div>
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-md-8">
-						<div class="signup-heading wow pixFadeUp">
-							<h2 class="title">
-								If Covid has taught us nothing else,
-                                it is that the air we breathe and work in is not clean
+                                    <p class="wow pixFadeUp" data-wow-delay="0.3s">
+                                        SaniCloud does not require specialized or expensive supplies. <br>
 
-							</h2>
+                                    </p>
 
-							<p>
-								 
-								 
-							</p>
-						</div>
-						<!-- /.signup-heading -->
-					</div>
-					<!-- /.col-md-8 -->
+                                </div>
+                                <!-- /.section-title style-two -->
 
-					<div class="col-md-4">
-						<div class="button-container text-right wow pixFadeUp">
-							<a href="signup.html" class="pix-btn btn-large btn-light color-two">Buy Now</a>
-						</div>
-						<!-- /.button-container -->
-					</div>
-					<!-- /.col-md-4 -->
-				</div>
-				<!-- /.row -->
-			</div>
-			<!-- /.container -->
-		</section>
-		<!-- /.signup-section -->
-<section class="testimonials swiper-init">
-			<div class="container">
-				<div class="section-title text-center">
-					<h3 class="sub-title wow pixFadeUp" style="visibility: visible; animation-name: pixFadeUp;">Testiimonial</h3>
-					<h2 class="title wow pixFadeUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: pixFadeUp;">What our client say about us</h2>
-				</div><!-- /.section-title -->
+                                <ul class="list-items wow pixFadeUp" data-wow-delay="0.4s">
+                                    <li>SaniCloud brings advanced clean room technology and makes it affordable to provide a high level of protection in community offices.
+                                    </li>
+                                    <li>Feel safe returning to work at full speed with the additional protection of SaniCloud technology.</li>
+                                    <li>Pharmaceutical companies have been using hydrogen peroxide in their cleanrooms for decades to prevent transmissible disease. Read more.</li>
 
-				<div class="testimonial-wrapper wow pixFadeUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: pixFadeUp;">
-					<div class="swiper-container swiper-container-initialized swiper-container-horizontal" id="testimonial" data-speed="700" data-autoplay="5000">
+                                </ul>
 
-						<div class="swiper-wrapper" style="transform: translate3d(-1540px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" style="width: 770px;">
-							
-							</div>
-							<div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 770px;">
-								<div class="testimonial">
-									<div class="single-bio-thumb">
-										<img src="./assets/img/3.png" alt="testimonial">
-									</div>
-									<!-- /.single-bio-thumb -->
+                                <a href="#" class="pix-btn btn-outline-two wow pixFadeUp" data-wow-delay="0.5s">Buy Now</a>
+
+                            </div>
+                            <!-- /.interface-content -->
+                        </div>
+                        <!-- /.col-lg-6 -->
 
 
-									<div class="testimonial-content">
-										<p>This is the absolute best solution we have found in 6 months of searching. Safety is our number 1 priority and the efficiency is incredible.</p>
-									</div>
-									<!-- /.testimonial-content -->
+                        <div class="col-lg-5">
+                            <div class="interface-image-wrapper style-one">
+                                <div class="image-one wow pixFadeUp">
+                                    <img src="assets/img/Product_345_v4_Transparent.webp" data-parallax='{"y" : 50}' alt="interface">
+                                </div>
 
-									<div class="bio-info">
-										<h3 class="name">Dr. Tim Bell</h3>
-										<span class="job">President, Appletree Medical Group</span>
-									</div>
-									<!-- /.bio-info -->
-
-								</div>
-								<!-- /.testimonial -->
-							</div>
-
-				
-</div><!-- /.swiper-wrapper -->
+                                <div class="image-two wow pixFadeDown">
+                                    <img src="assets/img/Product_345_v4_Transparent.webp" data-parallax='{"y" : -50}' alt="interface">
+                                </div>
 
 
-					<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div><!-- /.swiper-container -->
-					<div class="shape-shadow"></div>
-					<div class="slider-nav wow pixFadeUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: pixFadeUp;">
-						<div id="slide-prev" class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide">
-							<i class="ei ei-arrow_left"></i>
-						</div>
-						<div id="slide-next" class=" swiper-button-next" tabindex="0" role="button" aria-label="Next slide">
-							<i class="ei ei-arrow_right"></i>
-						</div>
-					</div>
-				</div>
-				<!-- /.testimonial-wrapper -->
-			</div>
-			<!-- /.container -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="svgbg-one" xmlns:xlink="http://www.w3.org/1999/xlink" width="700px" height="700px">
+                                    <path fill-rule="evenodd" opacity="0.102" fill="rgb(251, 201, 82)" d="M350.000,-0.000 C543.300,-0.000 700.000,156.700 700.000,350.000 C700.000,543.299 543.300,700.000 350.000,700.000 C156.700,700.000 -0.000,543.299 -0.000,350.000 C-0.000,156.700 156.700,-0.000 350.000,-0.000 Z" />
+                                </svg>
+                            </div>
+                            <!-- /.interface-image-wrapper -->
+                        </div>
+                        <!-- /.col-lg-6 -->
+                    </div>
+                    <!-- /.interface-toparea -->
 
-			<div class="scroll-circle wow pixFadeDown" style="visibility: visible; animation-name: pixFadeDown;">
-				<img src="media/background/circle9.png" data-parallax="{&quot;y&quot; : 250}" alt="circle" style="transform:translate3d(0px, 231.113px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 231.113px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-			</div>
-		</section>
+                </div>
+                <!-- /.row -->
 
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="interface-image-wrapper style-two">
+                            <div class="image-one wow pixFadeRight">
+                                <img src="./assets/img/Product_347_v5_Transparent.webp" data-parallax='{"x" : 30}' alt="interface">
+                            </div>
 
-		<!--=========================-->
-		<!--=        Footer         =-->
-		<!--=========================-->
-		<footer id="footer" class="footer-five">
-			<div class="container">
-				<div class="footer-inner wow pixFadeUp">
-					<div class="row">
-						<div class="col-lg-3 col-md-6">
-							<div class="widget footer-widget">
-								<h3 class="widget-title">Company</h3>
-
-								<ul class="footer-menu">
-									<li><a href="#">Features</a></li>
-									<li><a href="#">Dashboard & Tool</a></li>
-									<li><a href="#">Our Portfolio</a></li>
-									<li><a href="#">About Us</a></li>
-									<li><a href="#">Get In Touch</a></li>
-								</ul>
-							</div>
-							<!-- /.widget footer-widget -->
-						</div>
-						<!-- /.col-lg-3 col-md-6 -->
-
-						<div class="col-lg-3 col-md-6">
-							<div class="widget footer-widget">
-								<h3 class="widget-title">Services</h3>
-
-								<ul class="footer-menu">
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">Development</a></li>
-									<li><a href="#">Wordpress</a></li>
-									<li><a href="#">Online Marketing</a></li>
-									<li><a href="#">Content</a></li>
-								</ul>
-							</div>
-							<!-- /.widget footer-widget -->
-						</div>
-						<!-- /.col-lg-3 col-md-6 -->
-
-						<div class="col-lg-3 col-md-6">
-							<div class="widget footer-widget">
-								<h3 class="widget-title">Digital Experience</h3>
-
-								<ul class="footer-menu">
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">Mobile App Design</a></li>
-									<li><a href="#">UX / UI design</a></li>
-									<li><a href="#">Dashboard & Tool</a></li>
-									<li><a href="#">Logo & Identity</a></li>
-								</ul>
-							</div>
-							<!-- /.widget footer-widget -->
-						</div>
-						<!-- /.col-lg-3 col-md-6 -->
-
-						<div class="col-lg-3 col-md-6">
-							<div class="widget footer-widget">
-								<h3 class="widget-title">Our Address</h3>
-
-								<p>
-									Lavaca Street, Suite 24, Road Apt New York, USA
-								</p>
-
-								<ul class="footer-social-link">
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-								</ul>
-							</div>
-							<!-- /.widget footer-widget -->
-						</div>
-						<!-- /.col-lg-3 col-md-6 -->
-					</div>
-					<!-- /.row -->
-
-				</div><!-- /.footer-inner -->
-
-				<div class="site-info">
-					<div class="copyright">
-						<p>© 2019 All Rights Reserved Design by <a href="#" target="_blank">SmithStudios</a></p>
-					</div>
-
-					<ul class="site-info-menu">
-						<li><a href="#">Privacy & Policy.</a></li>
-						<li><a href="#">Faq.</a></li>
-						<li><a href="#">Terms.</a></li>
-					</ul>
-				</div><!-- /.site-info -->
-			</div><!-- /.container -->
-		</footer><!-- /#footer -->
+                            <div class="image-two wow pixFadeLeft">
+                                <img src="./assets/img/Product_347_v5_Transparent.webp" data-parallax='{"x" : -30}' alt="interface">
+                            </div>
 
 
-	</div><!-- /#site -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="svgbg-two" xmlns:xlink="http://www.w3.org/1999/xlink" width="700px" height="700px">
+                                <path fill-rule="evenodd" opacity="0.102" fill="rgb(82, 251, 237)" d="M350.000,-0.000 C543.300,-0.000 700.000,156.700 700.000,350.000 C700.000,543.299 543.300,700.000 350.000,700.000 C156.700,700.000 -0.000,543.299 -0.000,350.000 C-0.000,156.700 156.700,-0.000 350.000,-0.000 Z" />
+                            </svg>
+                        </div>
+                        <!-- /.interface-image-wrapper -->
+                    </div>
+                    <!-- /.col-lg-6 -->
 
-	<!-- Dependency Scripts -->
-	<script src="dependencies/popper.js/popper.min.js"></script>
-	<script src="dependencies/jquery/jquery.min.js"></script>
-	<script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
-	<script src="dependencies/swiper/js/swiper.min.js"></script>
-	<script src="dependencies/jquery.appear/jquery.appear.js"></script>
-	<script src="dependencies/wow/js/wow.min.js"></script>
-	<script src="dependencies/countUp.js/countUp.min.js"></script>
-	<script src="dependencies/isotope-layout/isotope.pkgd.min.js"></script>
-	<script src="dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
-	<script src="dependencies/jquery.parallax-scroll/js/jquery.parallax-scroll.js"></script>
-	<script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
-	<script src="dependencies/gmap3/js/gmap3.min.js"></script>
-	<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&#038;ver=2.1.6'></script>
+                    <div class="col-lg-5 pix-order-one">
+                        <div class="interface-content">
 
-	<!-- Site Scripts -->
-	<script src="assets/js/header.js"></script>
-	<script src="assets/js/app.js"></script>
+                            <div class="interface-title pixFadeUp">
+                                <h2>
+                                    Return to Work Safely
 
-</body>
 
-</html>
+                                </h2>
+
+
+                                <p class="wow pixFadeUp md-brn" data-wow-delay="0.3s">
+
+                                    Return to your office in a safer environment for everyone. <br>
+                                    SaniCloud1000 reaches all areas, not just areas visible for wipedown.<br>
+                                </p>
+
+                            </div>
+                            <!-- /.section-title style-two -->
+
+                            <ul class="list-items list-with-icon wow pixFadeUp" data-wow-delay="0.4s">
+
+                                <li>-> Combined with your existing PPE protocol, this added level of protection significantly reduces risk, allowing you to practice comfortably.</li>
+                                <li>-> Feel safe returning to work at full speed with the additional protection of SaniCloud technology.</li>
+
+                            </ul>
+
+                            <a href="#" class="pix-btn btn-outline-two wow pixFadeUp" data-wow-delay="0.5s">Discover More</a>
+
+                        </div>
+                        <!-- /.interface-content -->
+                    </div>
+                    <!-- /.col-lg-6 -->
+                </div>
+                <!-- /.row -->
+
+                <div class="border-wrap">
+                    <span class="ball" data-parallax='{"x" : -100}'></span>
+                    <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="animate-border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 908.5 976.2" style="enable-background:new 0 0 908.5 976.2;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill: #FFFFFF;
+                            }
+
+                            .st1 {
+                                opacity: 5.000000e-02;
+                            }
+
+                            .st2 {
+                                fill: #1A4A88;
+                            }
+
+                            .st3 {
+                                opacity: 0.8;
+                                fill: #EA7225;
+                            }
+
+                            .st4 {
+                                fill: #D86928;
+                            }
+
+                            .st5 {
+                                fill: #EA7225;
+                            }
+
+                            .st6 {
+                                fill: #F89938;
+                            }
+
+                            .st7 {
+                                fill: #FDFEFE;
+                            }
+
+                            .st8 {
+                                opacity: 0.5;
+                                fill: #EA7225;
+                            }
+
+                            .st9 {
+                                opacity: 0.75;
+                                fill: #EA7225;
+                            }
+
+                            .st10 {
+                                fill: none;
+                                stroke: #1A4A88;
+                                stroke-width: 1.5;
+                                stroke-miterlimit: 10;
+                            }
+
+                            .st11 {
+                                opacity: 0.1;
+                            }
+
+                            .st12 {
+                                opacity: 0.85;
+                                fill: #EA7225;
+                            }
+
+                            .st13 {
+                                opacity: 0.81;
+                                fill: #EA7225;
+                            }
+
+                            .st14 {
+                                opacity: 0.4;
+                                fill: #EA7225;
+                            }
+
+                            .st15 {
+                                opacity: 0.7;
+                                fill: #EA7225;
+                            }
+
+                            .st16 {
+                                fill: none;
+                                stroke: #F0577E;
+                                stroke-width: 2;
+                                stroke-miterlimit: 10;
+                            }
+
+                            .st17 {
+                                fill: none;
+                                stroke: #F0577E;
+                                stroke-width: 2;
+                                stroke-miterlimit: 10;
+                                stroke-dasharray: 3.9904, 5.9856;
+                            }
+                        </style>
+                        <g>
+                            <g>
+                                <g>
+                                    <path class="st16" d="M8.4,908.7c0,0,0.6,0.4,1.7,1.1" />
+                                    <path class="st17 path" d="M15.2,912.9c36.7,22,207.6,117.4,147.2-44.2c-67.5-180.6-137.7-410.5,320-358
+							c457.7,52.5,448.6-207.4,383-331C808.1,71.8,725.1,26.6,704.9,16.8" />
+                                    <path class="st16" d="M702.2,15.5c-1.2-0.5-1.8-0.8-1.8-0.8" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+
+
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.interface -->
+        <section class="about-tax">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="about-video-wrapper">
+                            <div class="popup-videos wow pixFadeRight">
+                                <div class="video-thumbnail">
+                                    <img src="assets/img/virus_diagram_2_gd.webp" alt="thumbnail">
+
+                                    <span class="dot-shape"><img src="media/about/dot.png" alt="saaspik"></span>
+                                </div>
+                                <!-- /.video-thumbnail -->
+
+
+                            </div>
+                            <!-- /.popup-video -->
+                        </div>
+                        <!-- /.about-video-wrapper -->
+                    </div>
+                    <!-- /.col-lg-5 -->
+
+                    <div class="col-lg-7">
+                        <div class="about-tax-content">
+                            <div class="section-title">
+
+                                <h2 class="title wow pixFadeUp">
+                                    The Process
+                                </h2>
+                            </div>
+                            <!-- /.section-title -->
+
+                            <p class="wow pixFadeUp" data-wow-delay="0.3s">
+                                The system leverages 70 years of scientific data on best practices for sterilization of hospital and healthcare environments. The SANICLOUD system brings previously unaffordable technology to the community in a safe, effective, easy-to-use system that kills viruses, bacteria and fungi. </p>
+                            <p class="wow pixFadeUp" data-wow-delay="0.3s">
+                                The machine disperses micro-droplets of disinfectant to create a wave of Aero-sanitizer which can treat both the air and surfaces. The automated system measures and controls the air saturation and humidity within the room to ensure the appropriate amount of disinfectant is released for a complete decontamination process. </p>
+
+                            <p class="wow pixFadeUp" data-wow-delay="0.3s">
+                                Small droplets can capture particles circulating in the air
+                                and disinfect floating clusters of COVID-19. </p>
+
+
+                            <p class="wow pixFadeUp" data-wow-delay="0.3s">
+                                Larger droplets provide more efficient decontamination of surfaces but are sized to avoid excessive wetness thereby preventing damage to room contents. </p>
+
+                            <a href="#" class="pix-btn btn-two wow fadeInUp" data-wow-delay="0.7s">Learn More</a>
+                        </div>
+                        <!-- /.service-content -->
+                    </div>
+                    <!-- /.col-lg-7 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.service -->
+
+
+
+        <!--=================================-->
+        <!--=         Signup Section        =-->
+        <!--=================================-->
+        <section class="signup-section">
+            <div class="bg-shape">
+                <img src="media/background/left-shape.png" data-parallax='{"x": -130}' alt="shape" class="shape-left">
+                <img src="media/background/right_shape.png" data-parallax='{"x": 130}' alt="shape" class="shape-right">
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <div class="signup-heading wow pixFadeUp">
+                            <h2 class="title">
+                                "If Covid has taught us nothing else,
+                                it is that the air we breathe and work in is not clean"
+
+                            </h2>
+
+                            <p>
+
+
+                            </p>
+                        </div>
+                        <!-- /.signup-heading -->
+                    </div>
+                    <!-- /.col-md-8 -->
+
+                    <div class="col-md-4">
+                        <div class="button-container text-right wow pixFadeUp">
+                            <a href="signup.html" class="pix-btn btn-large btn-light color-two">Buy Now</a>
+                        </div>
+                        <!-- /.button-container -->
+                    </div>
+                    <!-- /.col-md-4 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.signup-section -->
+
+
+        <!-- /.service -->
+        <!-- /.interface -->
+        <section class="about-tax">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="about-video-wrapper">
+                            <div class="popup-videos wow pixFadeRight">
+                                <div class="video-thumbnail">
+                                    <img src="assets/img/virus_diagram_2_gd.webp" alt="thumbnail">
+
+                                    <span class="dot-shape"><img src="media/about/dot.png" alt="saaspik"></span>
+                                </div>
+                                <!-- /.video-thumbnail -->
+
+
+                            </div>
+                            <!-- /.popup-video -->
+                        </div>
+                        <!-- /.about-video-wrapper -->
+                    </div>
+                    <!-- /.col-lg-5 -->
+
+                    <div class="col-lg-7">
+                        <div class="about-tax-content">
+                            <div class="section-title">
+
+                                <h2 class="title wow pixFadeUp">
+                                    Increase Efficiency & Productivity
+                                </h2>
+                            </div>
+                            <!-- /.section-title -->
+
+                            <p class="wow pixFadeUp" data-wow-delay="0.3s">
+                                SANICLOUD1000’s room sterilization system decreases overall room downtime. </p>
+                            <p class="wow pixFadeUp" data-wow-delay="0.3s">
+                                The device is small, modular and moves easily between rooms to decontaminate multiple spaces and common areas. </p>
+
+                            <p class="wow pixFadeUp" data-wow-delay="0.3s">
+                                While active on airborne pathogens, the treatment also reaches all surfaces, including those that may be missed during regular wiping between clients. As part of your daily disinfection routine, SaniCloud is the Ultimate PPE Effectiveness Insurance for your office! </p>
+
+
+                            <p class="wow pixFadeUp" data-wow-delay="0.3s">
+                                The method of delivery is more effective than traditional cleaning given its ability to penetrate inaccessible and hard-to-reach areas. </p>
+
+                            <p class="wow pixFadeUp" data-wow-delay="0.3s">
+                                Automated sterilization cycles remove the human error component of manual disinfecting to more efficiently eliminate microorganisms such as bacteria, germs and viruses. </p>
+                            <a href="#" class="pix-btn btn-two wow fadeInUp" data-wow-delay="0.7s">Learn More</a>
+                        </div>
+                        <!-- /.service-content -->
+                    </div>
+                    <!-- /.col-lg-7 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.service -->
+        <!--========================-->
+        <!--=         Team         =-->
+        <!--========================-->
+        <section class="teams-two" stlye="padding: 0px">
+
+
+            <div class="faq-section-two">
+                <div class="container">
+                    <div class="section-title text-center">
+                        <h3 class="sub-title wow pixFadeUp">Frequently ask Question</h3>
+                        <h2 class="title wow pixFadeUp">
+                            Hi, how can we help?
+                        </h2>
+                    </div>
+                    <!-- /.section-title -->
+                    <div class="tabs-wrapper wow pixFadeUp" data-wow-delay="0.5s">
+
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="design" role="tabpanel" aria-labelledby="design-tab">
+                                <div id="accordion" class="faq faq-two pixFade">
+                                    <div class="card active">
+                                        <div class="card-header" id="heading100">
+                                            <h5>
+                                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse001" aria-expanded="false" aria-controls="collapse001">
+                                                    How efficient is vaporized hydrogen peroxide?
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse001" class="collapse show" aria-labelledby="heading100" data-parent="#accordion" style="">
+                                            <div class="card-body">
+                                                <p>
+                                                    Learn about it <a href="https://www.ajicjournal.org/action/showPdf?pii=S0196-6553%2809%2900744-5">here</a>.
+                                                    Review <a href="https://www.journalofhospitalinfection.com/action/showPdf?pii=S0195-6701%2814%2900059-0">this study</a> for even more information
+
+                                                    Hospitals also use hydrogen peroxide to reduce disease transmission. <a href="https://www.hopkinsmedicine.org/news/media/releases/hydrogen_peroxide_vapor_enhances_hospital_disinfection_of_superbugs">Read about</a> how infection control experts at The John Hopkins Hospital have found hydrogen peroxide to help with disinfection of superbugs.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="heading200">
+                                            <h5>
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse100" aria-expanded="true" aria-controls="collapse100">
+                                                    Is the SANICLOUD1000 safe?
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse100" class="collapse" aria-labelledby="heading200" data-parent="#accordion" style="">
+                                            <div class="card-body">
+                                                <p>
+                                                    Safety is always our #1 priority - it is the reason this technology exists! Our first element of safety is to reduce viral load in the air and on surfaces. Our second element is to ensure that your workplace does not exceed OHSA standards. Your unit comes with chemical sensors that allow you to ensure that your staff are not exposed to more than the OHSA standard TWA exposure limit of 1 ppm for hydrogen peroxide.
+
+                                                    <a href="https://www.labour.gov.on.ca/english/hs/pubs/oel_table.php#h">Learn more</a> about current occupational exposure limits for Ontario workplaces.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="heading300">
+                                            <h5>
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse200" aria-expanded="false" aria-controls="collapse200">
+                                                    Why do you need three levels of PPE?
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse200" class="collapse" aria-labelledby="heading300" data-parent="#accordion" style="">
+                                            <div class="card-body">
+                                                <p>
+                                                    • Washing hands helps <br>
+                                                    • Wearing a mask helps<br>
+                                                    • Neutralizing the virus helps a lot<br><br>
+
+                                                    It's about reducing risk. Along with standard PPE, SaniCloud can significantly reduce your risk from airborne and surface viruses such as COVID-19 and influenza.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="heading400">
+                                            <h5>
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse300" aria-expanded="false" aria-controls="collapse300">
+                                                    Why is air hygene important?
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse300" class="collapse" aria-labelledby="heading400" data-parent="#accordion" style="">
+                                            <div class="card-body">
+                                                <p>
+                                                    Air Hygiene is a problem that must no longer be ignored. <br><br>
+
+                                                    It's important to protect against Covid, but this is just part of a larger ongoing problem!<br><br>
+
+                                                    Airborne Viruses consistently Kill and Sicken a large number of the population every year!<br><br>
+
+                                                    • Influenza > 3,000 deaths every year<br>
+                                                    • Pneumonias > 2,000 deaths every year<br><br>
+
+                                                    Plus the enormous economic costs of:<br><br>
+
+                                                    • Bronchitis<br>
+                                                    • Colds and Flu-like Illnesses<br>
+                                                    • Sinus, Throat and Ear Infections<br>
+                                                    • Asthma exacerbations from viral triggers<br><br>
+
+                                                    Hopefully a vaccine will halt the current pandemic by next fall--- but that will be just in time for another Flu season!<br><br>
+
+                                                    Let's clear the air now and keep it that way into the future!<br><br>
+
+                                                    Help end the spread of of airborne disease, in our workplace, our childrens' schools, our retirement homes and all our healthcare facilities! Order your Sanicloud System today!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="heading400">
+                                            <h5>
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse400" aria-expanded="false" aria-controls="collapse300">
+                                                    No maintenance required
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse400" class="collapse" aria-labelledby="heading400" data-parent="#accordion" style="">
+                                            <div class="card-body">
+                                                <p>
+                                                    The magic is in the nozzle technology allowing you to use off-the-shelf 3% hydrogen peroxide solution to achieve the desired level of disinfection.<br><br>
+
+                                                    Top fills from 4-litre jug.
+                                                    Easy handling, no mess.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /.tabs-wrapper -->
+
+                    <!--
+                    <div class="button-container text-center mt-40">
+                        <a href="#" class="pix-btn btn-outline wow pixFadeUp">Explore Forum</a>
+                    </div>
+-->
+
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.faq-section -->
+
+            <div class="scroll-circle" data-parallax='{"y" : -130}'>
+                <img src="media/background/circle5.png" alt="circle">
+            </div>
+        </section>
+        <!-- /.teams -->
+
+        <!--==========================-->
+        <!--=         Inspect        =-->
+        <!--==========================-->
+        <div class="section inspect">
+            <div class="container">
+                <div class="section-title color-two text-center">
+                    <h2 class="title wow pixFadeUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: pixFadeUp;">
+                        Industries
+                    </h2>
+
+                    <!--
+                    <p class="wow pixFadeUp" data-wow-delay="0.5s">
+                        Blimey ruddy bleeding Elizabeth zonked my good sir hotpot give us a bell<br> blatant no biggie what a load of rubbish gutted mate,
+                    </p>
+-->
+                </div>
+
+                <div class="gp-tabs wow fadeInUp">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <nav class="pix-tab-navs">
+                                <ul class="gp-tabs-navigation">
+                                    <li data-content="inbox" class="active-tab active tab-nav-item">
+                                        <a href="#0" class="acc-btn">Professional Offices</a>
+
+                                        <div class="content">
+                                            <p>
+                                                Companies around the world have acted quickly and decisively to safeguard their employees and clients and ensure a safer workplace. Flus and viruses can be easily spread throughout the workplace but the Sanicloud1000 provides an additional layer of PPE that is even more effective than masking and physical distancing.
+                                            </p>
+
+                                            <a href="#" class="more-btn">Buy Now<i class="ei ei-arrow_right"></i></a>
+                                        </div>
+                                    </li>
+                                    <li data-content="inbox" class="tab-nav-item">
+                                        <a href="#0" class="acc-btn">Institutions</a>
+
+                                        <div class="content">
+                                            <p>
+                                                The return to institutions has been marked by new challenges and different procedures designed to maintain the safety and well-being of everyone involved. Sanicloud can design specialized systems and decontamination processes that offer an added element of prevention while preserving a productive environment.
+                                            </p>
+
+                                            <a href="#" class="more-btn">Buy Now<i class="ei ei-arrow_right"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="tab-nav-item" data-content="new">
+                                        <a href="#0" class="acc-btn">Government </a>
+
+                                        <div class="content">
+                                            <p>
+                                                Sanicloud provides a solution to replace outdated manual cleaning technology, upgrade existing protocols and ensure all computer and office equipment is kept safe during sterilization.
+                                            </p>
+
+                                            <a href="#" class="more-btn">Buy Now<i class="ei ei-arrow_right"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="tab-nav-item" data-content="gallery" class="">
+                                        <a href="#0" class="acc-btn">Sanitation Industry</a>
+
+                                        <div class="content">
+                                            <p>
+                                                Adding Sanicloud to your current sanitation offerings will provide the ability to disinfect, decontaminate and ensure that your leave your clients’ environments free of contagions and bacteria. Presenting an aero-sterilization solution which is effective against pathogens, does not damage room contents and minimizes downtime will cement your status as a leader within your industry
+                                            </p>
+
+                                            <a href="#" class="more-btn">Buy Now<i class="ei ei-arrow_right"></i></a>
+                                        </div>
+                                    </li>
+                                </ul> <!-- gp-tabs-navigation -->
+                            </nav>
+                        </div><!-- /.col-lg-5 -->
+                        <div class="col-lg-7">
+                            <div class="tab-content-inner">
+                                <div class="gp-tabs-content">
+                                    <div data-content="inbox" class="active-tab pix-tab-item">
+                                        <div class="inspect-tab-image">
+                                            <div class="image-top">
+                                                <img src="media/tabs/1.png" alt="saaspik">
+                                            </div>
+
+                                            <div class="image-bottom">
+                                                <img src="media/tabs/2.png" alt="saaspik">
+                                            </div>
+                                            <div class="image-left">
+                                                <img src="media/tabs/3.png" alt="saaspik">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div data-content="new" class="pix-tab-item">
+                                        <div class="inspect-tab-image">
+                                            <div class="image-top">
+                                                <img src="media/tabs/1.png" alt="saaspik">
+                                            </div>
+
+                                            <div class="image-bottom">
+                                                <img src="media/tabs/2.png" alt="saaspik">
+                                            </div>
+                                            <div class="image-left">
+                                                <img src="media/tabs/3.png" alt="saaspik">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div data-content="gallery" class="pix-tab-item">
+                                        <div class="inspect-tab-image">
+                                            <div class="image-top">
+                                                <img src="media/tabs/1.png" alt="saaspik">
+                                            </div>
+
+                                            <div class="image-bottom">
+                                                <img src="media/tabs/2.png" alt="saaspik">
+                                            </div>
+                                            <div class="image-left">
+                                                <img src="media/tabs/3.png" alt="saaspik">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div> <!-- gp-tabs-content -->
+                            </div><!-- /.tab-content-inner -->
+
+                        </div><!-- /.col-lg-7 -->
+                    </div><!-- /.row -->
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.section inspect -->
+        <section class="testimonials swiper-init">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h3 class="sub-title wow pixFadeUp" style="visibility: visible; animation-name: pixFadeUp;">Testiimonial</h3>
+                    <h2 class="title wow pixFadeUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: pixFadeUp;">What our client say about us</h2>
+                </div><!-- /.section-title -->
+
+                <div class="testimonial-wrapper wow pixFadeUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: pixFadeUp;">
+                    <div class="swiper-container swiper-container-initialized swiper-container-horizontal" id="testimonial" data-speed="700" data-autoplay="5000">
+
+                        <div class="swiper-wrapper" style="transform: translate3d(-1540px, 0px, 0px); transition-duration: 0ms;">
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" style="width: 770px;">
+
+                            </div>
+                            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 770px;">
+                                <div class="testimonial">
+                                    <div class="single-bio-thumb">
+                                        <img src="./assets/img/3.png" alt="testimonial">
+                                    </div>
+                                    <!-- /.single-bio-thumb -->
+
+
+                                    <div class="testimonial-content">
+                                        <p>This is the absolute best solution we have found in 6 months of searching. Safety is our number 1 priority and the efficiency is incredible.</p>
+                                    </div>
+                                    <!-- /.testimonial-content -->
+
+                                    <div class="bio-info">
+                                        <h3 class="name">Dr. Tim Bell</h3>
+                                        <span class="job">President, Appletree Medical Group</span>
+                                    </div>
+                                    <!-- /.bio-info -->
+
+                                </div>
+                                <!-- /.testimonial -->
+                            </div>
+
+
+                        </div><!-- /.swiper-wrapper -->
+
+
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div><!-- /.swiper-container -->
+                    <div class="shape-shadow"></div>
+                    <div class="slider-nav wow pixFadeUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: pixFadeUp;">
+                        <div id="slide-prev" class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide">
+                            <i class="ei ei-arrow_left"></i>
+                        </div>
+                        <div id="slide-next" class=" swiper-button-next" tabindex="0" role="button" aria-label="Next slide">
+                            <i class="ei ei-arrow_right"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.testimonial-wrapper -->
+            </div>
+            <!-- /.container -->
+
+            <div class="scroll-circle wow pixFadeDown" style="visibility: visible; animation-name: pixFadeDown;">
+                <img src="media/background/circle9.png" data-parallax="{&quot;y&quot; : 250}" alt="circle" style="transform:translate3d(0px, 231.113px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 231.113px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
+            </div>
+        </section>
+
+        <!--===========================-->
+        <!--=         Contact         =-->
+        <!--===========================-->
+        <section class="contactus">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="contact-infos">
+                            <div class="contact-info">
+                                <h3 class="title">Our Location</h3>
+                                <p class="description">
+                                    Washington Fulton Street, Suite 640<br>
+                                    New York, NY 10010
+                                </p>
+
+                                <div class="info phone">
+                                    <i class="ei ei-icon_phone"></i>
+                                    <span>+1 601 978 2212</span>
+                                </div>
+                            </div>
+                            <!-- /.contact-info -->
+
+                            <div class="contact-info">
+                                <h3 class="title">Say Hello</h3>
+                                <p class="description">
+                                    Looking for more information? <br> Email us at . . .
+                                </p>
+
+                                <div class="info">
+                                    <i class="ei ei-icon_mail_alt"></i>
+                                    <span>info@sanicloudcanada.com</span>
+                                </div>
+                            </div>
+                            <!-- /.contact-info -->
+                        </div>
+                        <!-- /.contact-infos -->
+                    </div>
+                    <!-- /.col-md-4 -->
+                    <div class="col-md-8">
+                        <div class="contact-froms">
+                            <form class="contact-form" data-pixsaas="contact-froms">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input id="contact-name" type="text" name="name" placeholder="Name" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <input id="contact-organization" type="text" name="organization" placeholder="Organization" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input id="contact-address" type="text" name="address" placeholder="Address" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <input id="contact-position" type="text" name="organization" placeholder="Position" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input id="contact-num-employee" type="text" name="address" placeholder="Number of Employees" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <input id="contact-num-offices" type="text" name="organization" placeholder="Number of Offices" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input id="contact-phone-number" type="text" name="address" placeholder="Phone Number" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <input id="contact-email" type="text" name="organization" placeholder="Email" required>
+                                    </div>
+                                </div>
+
+
+
+                                <input type="text" id="contact-industry" name="address" placeholder="Industry" required>
+                                <button onclick="onSubmit()" type="submit" class="pix-btn submit-btn">Submit</button>
+
+                                <div class="form-result alert">
+                                    <div class="content"></div>
+                                </div>
+                            </form>
+                            <!-- /.contact-froms -->
+                        </div>
+                        <!-- /.faq-froms -->
+                    </div>
+                    <!-- /.col-md-8 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.contactus -->
+        <!--=========================-->
+        <!--=        Footer         =-->
+        <!--=========================-->
+        <footer id="footer" class="footer-five">
+            <div class="container">
+                <div class="footer-inner wow pixFadeUp">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="widget footer-widget">
+                                <h3 class="widget-title">Company</h3>
+
+                                <ul class="footer-menu">
+                                    <li><a href="#">Features</a></li>
+                                    <li><a href="#">Dashboard & Tool</a></li>
+                                    <li><a href="#">Our Portfolio</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Get In Touch</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.widget footer-widget -->
+                        </div>
+                        <!-- /.col-lg-3 col-md-6 -->
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="widget footer-widget">
+                                <h3 class="widget-title">Services</h3>
+
+                                <ul class="footer-menu">
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Development</a></li>
+                                    <li><a href="#">Wordpress</a></li>
+                                    <li><a href="#">Online Marketing</a></li>
+                                    <li><a href="#">Content</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.widget footer-widget -->
+                        </div>
+                        <!-- /.col-lg-3 col-md-6 -->
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="widget footer-widget">
+                                <h3 class="widget-title">Digital Experience</h3>
+
+                                <ul class="footer-menu">
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Mobile App Design</a></li>
+                                    <li><a href="#">UX / UI design</a></li>
+                                    <li><a href="#">Dashboard & Tool</a></li>
+                                    <li><a href="#">Logo & Identity</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.widget footer-widget -->
+                        </div>
+                        <!-- /.col-lg-3 col-md-6 -->
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="widget footer-widget">
+                                <h3 class="widget-title">Our Address</h3>
+
+                                <p>
+                                    Lavaca Street, Suite 24, Road Apt New York, USA
+                                </p>
+
+                                <ul class="footer-social-link">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- /.widget footer-widget -->
+                        </div>
+                        <!-- /.col-lg-3 col-md-6 -->
+                    </div>
+                    <!-- /.row -->
+
+                </div><!-- /.footer-inner -->
+
+                <div class="site-info">
+                    <div class="copyright">
+                        <p>© 2021 All Rights Reserved <a href="#" target="_blank">SANICLOUD</a> Design by <a href="#" target="_blank">SmithStudios</a></p>
+                    </div>
+
+                    <ul class="site-info-menu">
+                        <li><a href="#">Privacy & Policy.</a></li>
+                        <li><a href="#">Faq.</a></li>
+                        <li><a href="#">Terms.</a></li>
+                    </ul>
+                </div><!-- /.site-info -->
+            </div><!-- /.container -->
+        </footer><!-- /#footer -->
+
+
+    </div><!-- /#site -->
+
+    <!-- Dependency Scripts -->
+    <script src="dependencies/popper.js/popper.min.js"></script>
+    <script src="dependencies/jquery/jquery.min.js"></script>
+    <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+    <script src="dependencies/swiper/js/swiper.min.js"></script>
+    <script src="dependencies/jquery.appear/jquery.appear.js"></script>
+    <script src="dependencies/wow/js/wow.min.js"></script>
+    <script src="dependencies/countUp.js/countUp.min.js"></script>
+    <script src="dependencies/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="dependencies/jquery.parallax-scroll/js/jquery.parallax-scroll.js"></script>
+    <script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+    <script src="dependencies/gmap3/js/gmap3.min.js"></script>
+    <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&#038;ver=2.1.6'></script>
+
+    <!-- Site Scripts -->
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/app.js"></script>
+
+
+
+</body></html>
