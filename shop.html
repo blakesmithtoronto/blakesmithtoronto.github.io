@@ -165,11 +165,11 @@
         <section class="page-banner">
             <div class="container">
                 <div class="page-title-wrapper">
-                    <h1 class="page-title">Services</h1>
+                    <h1 class="page-title">Shop</h1>
 
                     <ul class="bradcurmed">
                         <li><a href="#" rel="noopener noreferrer">Home</a></li>
-                        <li>Services</li>
+                        <li>Shop</li>
                     </ul>
                 </div>
                 <!-- /.page-title-wrapper -->
@@ -193,113 +193,137 @@
         <!--===========================-->
         <!--=         Service         =-->
         <!--===========================-->
-        <section class="service">
+        <section class="service pt-0">
             <div class="container">
-                <div class="row ">
-                    <div id='product-component-1608361383149' style="margin: 50px auto;"></div>
-                    <script type="text/javascript">
-                        /*<![CDATA[*/
-                        (function() {
-                            var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-                            if (window.ShopifyBuy) {
-                                if (window.ShopifyBuy.UI) {
-                                    ShopifyBuyInit();
+                <div class="row pt-0">
+                    <div class="col-lg-5">
+                        <div id='product-component-1608361383149' style="margin: 100px auto;"></div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="service-content">
+                            <div class="section-title">
+                                <h3 class="sub-title wow pixFadeUp" data-wow-delay="0.3s"> SANICLOUD1000
+                                </h3>
+
+                                <h2 class="title wow pixFadeUp" data-wow-delay="0.5s">
+                                    SANICLOUD1000
+                                </h2>
+                            </div>
+                            <!-- /.section-title -->
+
+                            <p class="wow pixFadeUp" data-wow-delay="0.7s">
+                                The SANICLOUD1000 uses our proprietary, Aero-sanitization process to kill COVID-19 viruses in the air and on surfaces quickly and cost-effectively. The machine disperses micro-droplets of disinfectant to create a wave of Aero-sanitizer which can treat both the air and surfaces. The automated system measures and controls the air saturation and humidity within the room to ensure the appropriate amount of disinfectant is released for a complete decontamination process. <br><br>
+
+                                The method leverages 70 years of scientific data on best practices for sterilization of hospital and healthcare environments. The SANICLOUD system brings previously unaffordable technology to the community in a safe, effective, easy-to-use system that kills viruses, bacteria and fungi. <br><br>
+
+                                Price of unit is $9,995. <br><br>
+
+                                After purchase is complete, we will send you a link to a grant application. You may be eligible for a grant of up to $5,000 for PPE.
+                            </p>
+                        </div>
+                        <script type="text/javascript">
+                            /*<![CDATA[*/
+                            (function() {
+                                var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                                if (window.ShopifyBuy) {
+                                    if (window.ShopifyBuy.UI) {
+                                        ShopifyBuyInit();
+                                    } else {
+                                        loadScript();
+                                    }
                                 } else {
                                     loadScript();
                                 }
-                            } else {
-                                loadScript();
-                            }
 
-                            function loadScript() {
-                                var script = document.createElement('script');
-                                script.async = true;
-                                script.src = scriptURL;
-                                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-                                script.onload = ShopifyBuyInit;
-                            }
+                                function loadScript() {
+                                    var script = document.createElement('script');
+                                    script.async = true;
+                                    script.src = scriptURL;
+                                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                                    script.onload = ShopifyBuyInit;
+                                }
 
-                            function ShopifyBuyInit() {
-                                var client = ShopifyBuy.buildClient({
-                                    domain: 'sanicloud.myshopify.com',
-                                    storefrontAccessToken: 'b618db2ec8655214935556a88072ba28',
-                                });
-                                ShopifyBuy.UI.onReady(client).then(function(ui) {
-                                    ui.createComponent('product', {
-                                        id: '5620679770277',
-                                        node: document.getElementById('product-component-1608361383149'),
-                                        moneyFormat: '%24%7B%7Bamount%7D%7D',
-                                        options: {
-                                            "product": {
-                                                "styles": {
-                                                    "product": {
-                                                        "@media (min-width: 601px)": {
-                                                            "max-width": "calc(25% - 20px)",
-                                                            "margin-left": "20px",
-                                                            "margin-bottom": "50px"
-                                                        },
-                                                        "carousel-button": {
-                                                            "display": "none"
-                                                        }
-                                                    }
-                                                },
-                                                "contents": {
-                                                    "img": false,
-                                                    "imgWithCarousel": true,
-                                                    "button": false,
-                                                    "buttonWithQuantity": true
-                                                },
-                                                "text": {
-                                                    "button": "Add to cart"
-                                                }
-                                            },
-                                            "productSet": {
-                                                "styles": {
-                                                    "products": {
-                                                        "@media (min-width: 601px)": {
-                                                            "margin-left": "-20px"
-                                                        }
-                                                    }
-                                                }
-                                            },
-                                            "modalProduct": {
-                                                "contents": {
-                                                    "img": false,
-                                                    "imgWithCarousel": true,
-                                                    "button": false,
-                                                    "buttonWithQuantity": true
-                                                },
-                                                "styles": {
-                                                    "product": {
-                                                        "@media (min-width: 601px)": {
-                                                            "max-width": "100%",
-                                                            "margin-left": "0px",
-                                                            "margin-bottom": "0px"
-                                                        }
-                                                    }
-                                                },
-                                                "text": {
-                                                    "button": "Add to cart"
-                                                }
-                                            },
-                                            "cart": {
-                                                "text": {
-                                                    "total": "Subtotal",
-                                                    "button": "Checkout"
-                                                }
-                                            }
-                                        },
+                                function ShopifyBuyInit() {
+                                    var client = ShopifyBuy.buildClient({
+                                        domain: 'sanicloud.myshopify.com',
+                                        storefrontAccessToken: 'b618db2ec8655214935556a88072ba28',
                                     });
-                                });
-                            }
-                        })();
-                        /*]]>*/
-
-                    </script>
+                                    ShopifyBuy.UI.onReady(client).then(function(ui) {
+                                        ui.createComponent('product', {
+                                            id: '5620679770277',
+                                            node: document.getElementById('product-component-1608361383149'),
+                                            moneyFormat: '%24%7B%7Bamount%7D%7D',
+                                            options: {
+                                                "product": {
+                                                    "styles": {
+                                                        "product": {
+                                                            "@media (min-width: 601px)": {
+                                                                "max-width": "calc(25% - 20px)",
+                                                                "margin-left": "20px",
+                                                                "margin-bottom": "50px"
+                                                            },
+                                                            "carousel-button": {
+                                                                "display": "none"
+                                                            }
+                                                        }
+                                                    },
+                                                    "contents": {
+                                                        "img": false,
+                                                        "imgWithCarousel": true,
+                                                        "button": false,
+                                                        "buttonWithQuantity": true
+                                                    },
+                                                    "text": {
+                                                        "button": "Add to cart"
+                                                    }
+                                                },
+                                                "productSet": {
+                                                    "styles": {
+                                                        "products": {
+                                                            "@media (min-width: 601px)": {
+                                                                "margin-left": "-20px"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "modalProduct": {
+                                                    "contents": {
+                                                        "img": false,
+                                                        "imgWithCarousel": true,
+                                                        "button": false,
+                                                        "buttonWithQuantity": true
+                                                    },
+                                                    "styles": {
+                                                        "product": {
+                                                            "@media (min-width: 601px)": {
+                                                                "max-width": "100%",
+                                                                "margin-left": "0px",
+                                                                "margin-bottom": "0px"
+                                                            }
+                                                        }
+                                                    },
+                                                    "text": {
+                                                        "button": "Add to cart"
+                                                    }
+                                                },
+                                                "cart": {
+                                                    "text": {
+                                                        "total": "Subtotal",
+                                                        "button": "Checkout"
+                                                    }
+                                                }
+                                            },
+                                        });
+                                    });
+                                }
+                            })();
+                            /*]]>*/
+                        </script>
+                    </div>
+                    <!-- /.row -->
                 </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
+                <!-- /.container -->
         </section>
         <!-- /.service -->
 
@@ -419,6 +443,4 @@
     <script src="assets/js/header.js"></script>
     <script src="assets/js/app.js"></script>
 
-</body>
-
-</html>
+</body></html>

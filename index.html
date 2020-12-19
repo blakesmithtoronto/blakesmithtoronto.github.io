@@ -33,6 +33,9 @@
 
     <!-- Google Web Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+    <script src="./assets/js/main-contact-mailer.js">
+
+    </script>
     <script>
         function onSubmit() {
 
@@ -46,16 +49,35 @@
             let email = document.getElementById("contact-email").value
             let industry = document.getElementById("contact-industry").value
 
-            console.log(`name: ${name}
-             organization: ${organization}
-             address: ${address}
-             position: ${position}
-             numEmployees: ${numEmployees}
-             numOffices: ${numOffices}
-             phoneNumber: ${phoneNumber}
-             email: ${email}
-             industry: ${industry}`);
+            let text = `name: ${name}
+                organization: ${organization}
+                address: ${address}
+                position: ${position}
+                numEmployees: ${numEmployees}
+                numOffices: ${numOffices}
+                phoneNumber: ${phoneNumber}
+                email: ${email}
+                industry: ${industry}`;
+
+
+            let body = {
+                to: "blake@smithstudios.ca",
+                from: "Sanicloud-website@smithstudios.ca",
+                subject: "New Message from Sanicloud Website!",
+                text: text
+            }
+
+            let url = "https://er868qs1ji.execute-api.ca-central-1.amazonaws.com/dev/";
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            var data = JSON.stringify(body);
+            xhr.send(data);
+            alert("Message Sent!");
+
         }
+
     </script>
 
 </head>
@@ -139,7 +161,7 @@
                                         <li><a href="index-six.html">Home Six</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="about.html">Order Now</a></li>
+
 
                                 <li><a href="about.html">About</a></li>
 
@@ -167,12 +189,12 @@
                                     </ul>
                                 </li>
 
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="https://calendly.com/sanicloudcanada">Contact</a></li>
                                 <li><a href="./distributorships.html">Distributorships</a></li>
                             </ul>
 
                             <div class="nav-right">
-                                <a href="./SaasLand-Full/job-listing.html" class="nav-btn style-two">Buy Now</a>
+                                <a href="./shop.html" class="nav-btn style-two">Buy Now</a>
                             </div>
                         </div>
                         <!-- /.menu-wrapper -->
@@ -410,7 +432,7 @@
 
                                 </ul>
 
-                                <a href="#" class="pix-btn btn-outline-two wow pixFadeUp" data-wow-delay="0.5s">Buy Now</a>
+                                <a href="./shop.html" class="pix-btn btn-outline-two wow pixFadeUp" data-wow-delay="0.5s">Buy Now</a>
 
                             </div>
                             <!-- /.interface-content -->
@@ -488,7 +510,7 @@
                                 <li><i class="ei ei-icon_mug"></i>Requires little to no maintenance</li>
                             </ul>
 
-                            <a href="#" class="pix-btn btn-outline-two wow pixFadeUp" data-wow-delay="0.5s">Discover More</a>
+                            <a href="./shop.html" class="pix-btn btn-outline-two wow pixFadeUp" data-wow-delay="0.5s">Buy Now</a>
 
                         </div>
                         <!-- /.interface-content -->
@@ -590,6 +612,7 @@
                                 stroke-miterlimit: 10;
                                 stroke-dasharray: 3.9904, 5.9856;
                             }
+
                         </style>
                         <g>
                             <g>
@@ -639,7 +662,7 @@
 
                                 </ul>
 
-                                <a href="#" class="pix-btn btn-outline-two wow pixFadeUp" data-wow-delay="0.5s">Buy Now</a>
+                                <a href="./" class="pix-btn btn-outline-two wow pixFadeUp" data-wow-delay="0.5s">Buy Now</a>
 
                             </div>
                             <!-- /.interface-content -->
@@ -718,7 +741,7 @@
 
                             </ul>
 
-                            <a href="#" class="pix-btn btn-outline-two wow pixFadeUp" data-wow-delay="0.5s">Discover More</a>
+
 
                         </div>
                         <!-- /.interface-content -->
@@ -820,6 +843,7 @@
                                 stroke-miterlimit: 10;
                                 stroke-dasharray: 3.9904, 5.9856;
                             }
+
                         </style>
                         <g>
                             <g>
@@ -1176,7 +1200,7 @@
                         <div class="col-lg-5">
                             <nav class="pix-tab-navs">
                                 <ul class="gp-tabs-navigation">
-                                    <li data-content="inbox" class="active-tab active tab-nav-item">
+                                    <li data-content="offices" class="active-tab active tab-nav-item">
                                         <a href="#0" class="acc-btn">Professional Offices</a>
 
                                         <div class="content">
@@ -1187,7 +1211,7 @@
                                             <a href="#" class="more-btn">Buy Now<i class="ei ei-arrow_right"></i></a>
                                         </div>
                                     </li>
-                                    <li data-content="inbox" class="tab-nav-item">
+                                    <li data-content="institutions" class="tab-nav-item">
                                         <a href="#0" class="acc-btn">Institutions</a>
 
                                         <div class="content">
@@ -1198,7 +1222,7 @@
                                             <a href="#" class="more-btn">Buy Now<i class="ei ei-arrow_right"></i></a>
                                         </div>
                                     </li>
-                                    <li class="tab-nav-item" data-content="new">
+                                    <li class="tab-nav-item" data-content="government">
                                         <a href="#0" class="acc-btn">Government </a>
 
                                         <div class="content">
@@ -1209,7 +1233,7 @@
                                             <a href="#" class="more-btn">Buy Now<i class="ei ei-arrow_right"></i></a>
                                         </div>
                                     </li>
-                                    <li class="tab-nav-item" data-content="gallery" class="">
+                                    <li class="tab-nav-item" data-content="sanitation" class="">
                                         <a href="#0" class="acc-btn">Sanitation Industry</a>
 
                                         <div class="content">
@@ -1220,16 +1244,28 @@
                                             <a href="#" class="more-btn">Buy Now<i class="ei ei-arrow_right"></i></a>
                                         </div>
                                     </li>
+                                    <li class="tab-nav-item" data-content="hotels" class="">
+                                        <a href="#0" class="acc-btn">Hotels and Cruise Ships</a>
+
+                                        <div class="content">
+                                            <p>
+                                                Adding Sanicloud to your current sanitation offerings will provide the ability to disinfect, decontaminate and ensure that your leave your clients’ environments free of contagions and bacteria. Presenting an aero-sterilization solution which is effective against pathogens, does not damage room contents and minimizes downtime will cement your status as a leader within your industry
+                                            </p>
+
+                                            <a href="#" class="more-btn">Buy Now<i class="ei ei-arrow_right"></i></a>
+                                        </div>
+                                    </li>
+
                                 </ul> <!-- gp-tabs-navigation -->
                             </nav>
                         </div><!-- /.col-lg-5 -->
                         <div class="col-lg-7">
                             <div class="tab-content-inner">
                                 <div class="gp-tabs-content">
-                                    <div data-content="inbox" class="active-tab pix-tab-item">
+                                    <div data-content="offices" class="active-tab pix-tab-item">
                                         <div class="inspect-tab-image">
                                             <div class="image-top">
-                                                <img src="media/tabs/1.png" alt="saaspik">
+                                                <img src="assets/img/prof-office.jpg" alt="saaspik">
                                             </div>
 
                                             <div class="image-bottom">
@@ -1241,10 +1277,10 @@
                                         </div>
                                     </div>
 
-                                    <div data-content="new" class="pix-tab-item">
+                                    <div data-content="institutions" class="pix-tab-item">
                                         <div class="inspect-tab-image">
                                             <div class="image-top">
-                                                <img src="media/tabs/1.png" alt="saaspik">
+                                                <img src="./assets/img/peabody-institute-1629259_640.jpg" alt="saaspik">
                                             </div>
 
                                             <div class="image-bottom">
@@ -1256,10 +1292,10 @@
                                         </div>
                                     </div>
 
-                                    <div data-content="gallery" class="pix-tab-item">
+                                    <div data-content="government" class="pix-tab-item">
                                         <div class="inspect-tab-image">
                                             <div class="image-top">
-                                                <img src="media/tabs/1.png" alt="saaspik">
+                                                <img src="./assets/img/ottawa-815375_640.jpg" alt="saaspik">
                                             </div>
 
                                             <div class="image-bottom">
@@ -1270,6 +1306,38 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div data-content="sanitation" class="pix-tab-item">
+                                        <div class="inspect-tab-image">
+                                            <div class="image-top">
+                                                <img src="./assets/img/trash-2497056_640.jpg" alt="saaspik">
+                                            </div>
+
+                                            <div class="image-bottom">
+                                                <img src="media/tabs/2.png" alt="saaspik">
+                                            </div>
+                                            <div class="image-left">
+                                                <img src="media/tabs/3.png" alt="saaspik">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div data-content="hotels" class="pix-tab-item">
+                                        <div class="inspect-tab-image">
+                                            <div class="image-top">
+                                                <img src="./assets/img/hotel-1330850_640.jpg" alt="saaspik">
+                                            </div>
+
+                                            <div class="image-bottom">
+                                                <img src="media/tabs/2.png" alt="saaspik">
+                                            </div>
+                                            <div class="image-left">
+                                                <img src="media/tabs/3.png" alt="saaspik">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
 
                                 </div> <!-- gp-tabs-content -->
                             </div><!-- /.tab-content-inner -->
@@ -1346,7 +1414,7 @@
         <!--===========================-->
         <!--=         Contact         =-->
         <!--===========================-->
-        <section class="contactus">
+        <section id="contact-us" class="contactus">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -1557,4 +1625,6 @@
 
 
 
-</body></html>
+</body>
+
+</html>
